@@ -1,37 +1,63 @@
 {% load staticfiles %}
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>{% block page_title %}{% endblock %}</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<title>{% block page_title %}{% endblock %}</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+	<!---- Navbar----->
+	<nav class="navbar navbar-default">
+		<ul class="nav navbar-nav">
+			<a class="navbar-brand" href="/">TriFlake Studios</a>
+			{% if user.is_authenticated %}
+			<li><a href="{% url 'profile' %}">Profile</a></li>
+			<li><a href="{% url 'logout' %}">Logout</a></li>
+			{% else %}
+			<li><a href="{% url 'login' %}">Login</a></li>
+			<li><a href="{% url 'registration' %}">Register</a></li>
+			{% endif %}
+		</ul>
+	</nav>
 
+	<!---- body----->
+	<!---- messages/alerts---->
+	{% if messages %}
+	<div class="alert alert-success">
+		<div class="messages">
+			{% for message in messages %}
+			{{ message }}
+			{% endfor %}
+		</div>
+	</div>
+	{% endif %}
+	<!---- end messages/alerts---->
+	<div class="container">
+		<h1>
+			{% block page_heading %}{% endblock %}
+		</h1>
+		{% block content %}
 
-    <nav class="navbar navbar-default">
-        <ul class="nav navbar-nav">
-            {% if user.is_authenticated %}
-            <li><a href="{% url 'profile' %}">Profile</a></li>
-            <li><a href="{% url 'logout' %}">Logout</a></li>
-            {% else %}
-            <li><a href="{% url 'login' %}">Login</a></li>
-            <li><a href="{% url 'registration' %}">Register</a></li>
-            {% endif %}
-        </ul>
-    </nav>
+		{% endblock %}
+	</div>
+	<!---- end messages/alerts---->
+	<footer>
+		<div class="container">
+			<p>@TriFlakeStudios</p>
+		</div>
+	</footer>
 
-    <h1>
-        {% block page_heading %}{% endblock %}
-    </h1>
-    {% if messages %}
-    <div>
-        {% for message in messages %} {{ message }} {% endfor %}
-    </div>
-    {% endif %} {% block content %}{% endblock %}
 </body>
+<!---- end body----->
 
 </html>
