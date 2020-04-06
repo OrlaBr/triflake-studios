@@ -1,6 +1,16 @@
 body {
-    font-family: Arial;
+    font-family: 'Noto Sans', sans-serif;
     padding-top: 50px;
+    background-color: red;
+}
+
+.navbar {
+    background-color:#f8f8f8;
+}
+
+.navbar-brand a {
+    color: #f0b927;
+
 }
 
 footer {
