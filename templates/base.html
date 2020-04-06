@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 	<title>{% block page_title %}{% endblock %}</title>
@@ -26,30 +26,30 @@
 	<!----Navbar----->
 	<section id="navbar">
 		<nav class="navbar navbar-expand-lg navbar-default fixed">
-			<a class="navbar-brand" href="#">TriFlake Studios</a>
-			<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<a class="navbar-brand brand-logo" href="#"><img src="/media/favicon.png">   TriFlake Studio</a>
+			<button type="button" class="navbar-toggler collapsed custome-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
+				<ul class="navbar-nav ml-auto nav-contents">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
+						<a class="nav-link" href="#about">services</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#activities">Activities</a>
+						<a class="nav-link" href="#activities">about</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#contactus">Contact Us</a>
+						<a class="nav-link" href="#contactus">contact</a>
 					</li>
 					{% if user.is_authenticated %}
-					<li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">Profile</a></li>
-					<li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a></li>
+					<li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">profile</a></li>
+					<li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">logout</a></li>
 					{% else %}
-					<li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
-					<li class="nav-item"><a class="nav-link" href="{% url 'registration' %}">Register</a></li>
+					<li class="nav-item"><a class="nav-link" href="{% url 'login' %}">login</a></li>
+					<li class="nav-item"><a class="nav-link" href="{% url 'registration' %}">register</a></li>
 					{% endif %}
 				</ul>
 			</div>
