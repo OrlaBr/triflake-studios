@@ -55,7 +55,15 @@ footer {
     padding-top: 20px;
 }
 
+form {
+    color: rgb(104, 102, 102);
+    padding-top: 20px;
+}
 
+.btn-default {
+    background-color: #2b9dc4;
+    color: white;
+}
 /***Registration Page**/
 
 .registerPage h2 {
@@ -73,12 +81,24 @@ footer {
     font-size: 18px;
 }
 
-form {
-    color: rgb(104, 102, 102);
-    padding-top: 20px;
+
+/***User Login Page**/
+
+.userLoginPage h2 {
+    color: #f0b927;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 900;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 40px;
 }
 
-.btn-default {
-    background-color: #2b9dc4;
-    color: white;
+.signUpText {
+    color:#A9A9A9;
+    text-align: center;
+}
+
+.forgotPassword {
+    color: rgb(104, 102, 102);
+    padding-top: 20px;
 }
