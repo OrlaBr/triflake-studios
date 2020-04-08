@@ -10,6 +10,8 @@
 	<title>TriFlake Studios</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="{% static 'css/custom.css' %}">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -27,36 +29,46 @@
 	<section id="navbar">
 		<nav class="navbar navbar-expand-lg navbar-default fixed">
 			<a class="navbar-brand brand-logo" href="#"><img src="/media/favicon.png">   TriFlake Studio</a>
-			<button type="button" class="navbar-toggler collapsed custome-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<button type="button" class="navbar-toggler collapsed custome-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto nav-contents">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">services</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#activities">about</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contactus">contact</a>
-					</li>
-					{% if user.is_authenticated %}
-					<li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">profile</a></li>
-					<li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">logout</a></li>
-					{% else %}
-					<li class="nav-item"><a class="nav-link" href="{% url 'login' %}">login</a></li>
-					<li class="nav-item"><a class="nav-link" href="{% url 'registration' %}">sign up</a></li>
-					{% endif %}
-				</ul>
-			</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto nav-contents">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#activities">about</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contactus">contact</a>
+						</li>
+						{% if user.is_authenticated %}
+						<li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">profile</a></li>
+						<li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">logout</a></li>
+						{% else %}
+						<li class="nav-item"><a class="nav-link" href="{% url 'login' %}">login</a></li>
+						<li class="nav-item"><a class="nav-link" href="{% url 'registration' %}">sign up</a></li>
+						{% endif %}
+						<li>
+							<a href="{% url 'view_cart' %}">
+								<i class="fa fa-shipping-cart"></i>Cart
+								{% if product_count > 0 %}
+								<label class="badge badge-warning">{{ product_count }}</label>
+								{% endif %}
+							</a>
+						</li>
+					</ul>
+				</div>
 		</nav>
 	</section>
 	<!---- body----->
+
 	<!---- messages/alerts---->
+
 	{% if messages %}
 	<div class="alert alert-success">
 		<div class="messages">
@@ -67,15 +79,27 @@
 	</div>
 	{% endif %}
 	<!---- end messages/alerts---->
+
 	<div class="container">
 		<h1>
 			{% block page_heading %}{% endblock %}
 		</h1>
+        <div class="display">
+            <form action="{% url 'search' %}" method="get">
+                <input type="text" name="q">
+                <button type="search">Search</button>
+            </form>
+        </div>
+         <!---- block content starts---->
+        
 		{% block content %}
 
 		{% endblock %}
+        <!---- end block content---->
+
 	</div>
-	<!---- end messages/alerts---->
+
+	<!---- end of page---->
 	<footer>
 		<div class="container">
 			<p class="copy-right text-muted text-center">
