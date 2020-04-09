@@ -47,7 +47,7 @@ def checkout(request):
 
             if customer.paid:
                 messages.error(
-                    request, "thank you for shopping with TriFlake Studio!")
+                    request, "Thank you for shopping with TriFlake Studio!")
                 request.session['cart'] = {}
                 return redirect(reverse('products'))
             else:
