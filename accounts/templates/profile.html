@@ -1,10 +1,24 @@
 {% extends 'base.html' %}
+{% load bootstrap_tags %}
+{% block page_title %}{{ user }}'s Page{% endblock %}
 
-{% block page_title %}{{ user }}'s Profile{% endblock %}
-
-{% block page_heading %}{{ user }}'s Profile{% endblock %}
 
 {% block content %}
-    <p>{{ profile.email }}</p>
 
+  <!-- profile page -->
+<div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h2 class="display-3 userHeading"> Welcome {{ profile }}!</h2>
+      <p class="lead">Welcome to our Members page. As a valuable signed up member of the TriFlake Studio Family, you will get access to freebies and tutorials. We will also give you exclusive previews to our latest services and products.</p>
+      <br>
+      <p>As a valued client we also give you your first consultation free, so if you have an idea for a project, and would like to chat with us, simply drop us a message, and we'll get back to you </p>
+      <a href="#" class="btn btn-default">send a message</a>
+    </header>
+
+ 
+  <!-- end profile page -->
+
+ 
 {% endblock %}

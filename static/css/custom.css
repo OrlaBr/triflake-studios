@@ -111,6 +111,7 @@ caption p {
     min-height: 40px;
 }
 
+
 /***footer**/
 footer {
     margin-top: 40px;
@@ -174,4 +175,11 @@ form {
 .forgotPassword {
     color: rgb(104, 102, 102);
     padding-top: 20px;
+}
+
+/***User Page**/
+
+.userHeading {
+    color: #f0b927;
+    font-family: 'Abhaya Libre', serif;
 }

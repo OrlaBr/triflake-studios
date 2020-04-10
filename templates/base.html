@@ -24,12 +24,13 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 	</script>
-    <!---- js for certain pages----->
+	<!---- js for certain pages----->
 	{% block head_js %}
 	{% endblock head_js %}
-    <!---- endjs----->
+	<!---- endjs----->
 </head>
 <!---- body--------------------------------->
+
 <body>
 	<!----Navbar----->
 	<section id="navbar">
@@ -39,48 +40,49 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                  <form class="form-inline active-cyan-3 active-cyan-4 ml-auto" action="{% url 'search' %}" method="get">
-				<i class="fas fa-search" aria-hidden="true"></i>
-				<input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" name="q"
+					<form class="form-inline active-cyan-3 active-cyan-4 ml-auto" action="{% url 'search' %}"
+						method="get">
+						<i class="fas fa-search" aria-hidden="true"></i>
+						<input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" name="q"
 	            aria-label="Search">
 	        </form>
-					<ul class="navbar-nav ml-auto nav-contents">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#about">services</a>
-						</li>
-                        <li class="nav-item">
-							<a class="nav-link" href="{% url 'products' %}">shop</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#about">about</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#contact-us">contact</a>
-						</li>
-						{% if user.is_authenticated %}
-						<li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">profile</a></li>
-						<li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">logout</a></li>
-						{% else %}
-						<li class="nav-item"><a class="nav-link" href="{% url 'login' %}">login</a></li>
-						<li class="nav-item"><a class="nav-link" href="{% url 'registration' %}">sign up</a></li>
-						{% endif %}
-						<li>
-							<a href="{% url 'view_cart' %}">
-								<i class="fas fa-shopping-cart fa-flip-horizontal nav-cart"></i>
-								{% if product_count > 0 %}
-								<label class="badge badge-warning">{{ product_count }}</label>
-								{% endif %}
-							</a>
-						</li>
-					</ul>
+						<ul class="navbar-nav ml-auto nav-contents">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{% url 'products' %}">shop</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">about</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact-us">contact</a>
+							</li>
+							{% if user.is_authenticated %}
+							<li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">profile</a></li>
+							<li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">logout</a></li>
+							{% else %}
+							<li class="nav-item"><a class="nav-link" href="{% url 'login' %}">login</a></li>
+							<li class="nav-item"><a class="nav-link" href="{% url 'registration' %}">sign up</a></li>
+							{% endif %}
+							<li>
+								<a href="{% url 'view_cart' %}">
+									<i class="fas fa-shopping-cart fa-flip-horizontal nav-cart"></i>
+									{% if product_count > 0 %}
+									<label class="badge badge-warning">{{ product_count }}</label>
+									{% endif %}
+								</a>
+							</li>
+						</ul>
 				</div>
 		</nav>
 	</section>
 
-    <!---- end nav----->
+	<!---- end nav----->
 
 	<!---- messages/alerts---->
 
@@ -98,17 +100,17 @@
 
 	<div class="container">
 
-	<!---- block content starts---->
+		<!---- block content starts---->
 
 		{% block content %}
 
 		{% endblock %}
 
-	<!---- end block content---->
+		<!---- end block content---->
 
 	</div>
 
-    <!---- end block content---->
+	<!---- end block content---->
 
 
 </body>
