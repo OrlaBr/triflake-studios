@@ -24,10 +24,12 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 	</script>
+    <!---- js for certain pages----->
 	{% block head_js %}
 	{% endblock head_js %}
+    <!---- endjs----->
 </head>
-
+<!---- body--------------------------------->
 <body>
 	<!----Navbar----->
 	<section id="navbar">
@@ -37,12 +39,20 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                  <form class="form-inline active-cyan-3 active-cyan-4 ml-auto" action="{% url 'search' %}" method="get">
+				<i class="fas fa-search" aria-hidden="true"></i>
+				<input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" name="q"
+	            aria-label="Search">
+	        </form>
 					<ul class="navbar-nav ml-auto nav-contents">
 						<li class="nav-item active">
 							<a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#about">services</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link" href="{% url 'products' %}">shop</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#activities">about</a>
@@ -69,7 +79,8 @@
 				</div>
 		</nav>
 	</section>
-	<!---- body----->
+
+    <!---- end nav----->
 
 	<!---- messages/alerts---->
 
@@ -82,41 +93,25 @@
 		</div>
 	</div>
 	{% endif %}
+
 	<!---- end messages/alerts---->
 
 	<div class="container">
-		<h1>
-			{% block page_heading %}{% endblock %}
-		</h1>
-		<div class="display">
-			<form action="{% url 'search' %}" method="get">
-				<input type="text" name="q">
-				<button type="search">Search</button>
-			</form>
-		</div>
-		<!---- block content starts---->
+
+	<!---- block content starts---->
 
 		{% block content %}
 
 		{% endblock %}
-		<!---- end block content---->
+
+	<!---- end block content---->
 
 	</div>
 
-	<!---- end of page---->
-	<footer>
-		<div class="container">
-			<p class="copy-right text-muted text-center">
-				&copy; <span id="year"></span> Breslin.TriFlakeStudios</p>
-		</div>
-	</footer>
+    <!---- end block content---->
+
 
 </body>
-<!---- end body----->
-<!----->
-<script>
-	var year = new Date().getFullYear().toString();
-        document.getElementById("year").innerHTML = year;
-</script>
+
 
 </html>
