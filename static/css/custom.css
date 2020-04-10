@@ -125,9 +125,6 @@ footer {
     background-color: #fff;
 }
 
-.accountform {
-    padding-top: 20px;
-}
 
 form {
     color: rgb(104, 102, 102);
@@ -182,4 +179,19 @@ form {
 .userHeading {
     color: #f0b927;
     font-family: 'Abhaya Libre', serif;
+}
+
+/***password-reset.html**/
+
+.passwordResetPage {
+    margin: auto;
+}
+
+.passwordReset {
+    color: #f0b927;
+    font-family: 'Abhaya Libre', serif;
+}
+
+.reset-btn {
+    margin-top: 20px;
 }
