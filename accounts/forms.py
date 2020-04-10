@@ -14,7 +14,7 @@ class UserLoginForm(forms.Form):
 class UserRegistrationForm(UserCreationForm):
     """Form used to register a new user"""
 
-    password = forms.CharField(
+    password1 = forms.CharField(
         label="Password",
         widget=forms.PasswordInput)
     password2 = forms.CharField(
@@ -23,7 +23,7 @@ class UserRegistrationForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ['username', 'email' ,'password1', 'password2']
+        fields = ['username', 'email', 'password1', 'password2']
 
     def clean_email(self):
         username = self.cleaned_data.get('username')
