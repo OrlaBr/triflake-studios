@@ -195,3 +195,36 @@ form {
 .reset-btn {
     margin-top: 20px;
 }
+
+/***home page***/
+
+.masthead {
+  min-height: 20rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("/media/masthead-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+}
+
+.header {
+    margin: auto;
+    padding-right: 30px;
+}
+
+.homeHeader {
+    color: #f0b927;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 900;
+}

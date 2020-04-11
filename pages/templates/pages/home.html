@@ -1,8 +1,22 @@
 {% extends "base.html" %}
+{% load bootstrap_tags %}
 
+{% block page_title %}TriFlake Studio{% endblock %}
 {% block title %}Home{% endblock %}
 
 {% block content %}
+<!-- Header -->
+<header class="masthead d-flex clearfix">
+	<div class="header">
+		<div class="text-right">
+			<h2 class="homeHeader display-4">TRIFLAKE</h2>
+			<h2 class="homeHeader display-4">STUDIO</h2>
+			<p class="lead">creative design studio</p>
+			<hr class="my-4">
+			<p>Want exclusive access to freebies, tutorials and off the shelf products?</p>
+			<a class="btn btn-default" href="#" role="button">sign up</a>
+		</div>
+	</div>
+</header>
 
-<h1>Hello World</h1>
 {% endblock %}
