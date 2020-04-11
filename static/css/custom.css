@@ -228,3 +228,51 @@ form {
     font-family: 'Abhaya Libre', serif;
     font-weight: 900;
 }
+
+/***Services Section***/
+
+.page-section h3.section-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+}
+
+.circle-container {
+    width: 125px;
+    height: 125px;
+    padding: 5px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding-bottom: 10px
+}
+.circle-cover-bg {
+    background: url("/media/masthead-image.jpg") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.circle-cover-bg2 {
+    background: url("/media/masthead-image.jpg") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.circle-cover-bg3 {
+    background: url("/media/masthead-image.jpg") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.service-heading {
+    padding-top: 20px;
+}
+
+.service-text {
+    padding-top: 20px;
+    color: #3e4347;
+}
