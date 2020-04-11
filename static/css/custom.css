@@ -257,19 +257,19 @@ form {
     padding-bottom: 10px
 }
 .circle-cover-bg {
-    background: url("/media/masthead-image.jpg") no-repeat center center;
+    background: url("/media/sm-triangle.jpg") no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
 
 .circle-cover-bg2 {
-    background: url("/media/masthead-image.jpg") no-repeat center center;
+    background: url("/media/sm-sketch.jpg") no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
 
 .circle-cover-bg3 {
-    background: url("/media/masthead-image.jpg") no-repeat center center;
+    background: url("/media/kleb-random.jpg") no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
