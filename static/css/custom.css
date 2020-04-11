@@ -231,6 +231,12 @@ form {
 
 /***Services Section***/
 
+.servicesHeader {
+    color: #2b9dc4;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 600;
+}
+
 .page-section h3.section-subheading {
   font-size: 16px;
   font-weight: 400;
