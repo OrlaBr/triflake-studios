@@ -285,6 +285,7 @@ form {
 
 .page-section {
     padding-bottom: 20px;
+    margin-top: 30px;
 }
 /***signup call to action***/
 
@@ -324,4 +325,17 @@ form {
 .fa-heart {
     color:#e76665;
     font-size: 20px;
+}
+
+/***about us section***/
+#aboutUs {
+    margin-top: 30px;
+    padding-top: 20px;
+}
+.aboutus-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 25px;
+    text-transform: none;
 }
