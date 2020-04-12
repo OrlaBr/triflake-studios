@@ -339,3 +339,9 @@ form {
     margin-bottom: 25px;
     text-transform: none;
 }
+
+.img-thumbnail {
+    height: 200px;
+    margin: auto;
+    border: none;
+}
