@@ -130,8 +130,26 @@
             <h2 class="display-4">WORK WITH US</h2>
             <p> We’d love to hear from you. Whether you have a question about services, design, pricing, or anything else, our team is ready to answer all your questions
 </p>
-            <form>Send message form</form>
-            <button>send</button>
+            <form class="contract-form form-content">
+                            <div class="form-group">
+                                <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required>
+                                <small class="form-text text-muted">*Required</small>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="5" name="message" id="message" class="form-control" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <input type="checkbox" class="form-check-label form-check-input id="accept-terms">
+                            <label for="accept-terms">Sign up for our Newsletter</label>
+                            <br>
+                            <br>
+                            <button type="submit" class="btn btn-info" id="contact-button">Send Message</button>
+                        </form>
           </div>
         </div>
       </div>
