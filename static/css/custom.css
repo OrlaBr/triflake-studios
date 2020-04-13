@@ -15,7 +15,6 @@ body {
 .navbar-brand {
     padding-left: 20px;
     padding-top: 10px;
-    font-family: 'Abhaya Libre', serif;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -112,15 +111,6 @@ caption p {
 }
 
 
-/***footer**/
-footer {
-    margin-top: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border-top: 1px solid #ededed;
-    color: #A9A9A9;
-}
-
 .icon-bar {
     background-color: #fff;
 }
@@ -139,8 +129,7 @@ form {
 
 .registerPage h2 {
     color: #f0b927;
-    font-family: 'Abhaya Libre', serif;
-    font-weight: 900;
+    font-family: 'Titan One', cursive;
     margin: 0 auto;
     padding: 20px;
     font-size: 40px;
@@ -157,8 +146,7 @@ form {
 
 .userLoginPage h2 {
     color: #f0b927;
-    font-family: 'Abhaya Libre', serif;
-    font-weight: 900;
+    font-family: 'Titan One', cursive;
     margin: 0 auto;
     padding: 20px;
     font-size: 40px;
@@ -178,7 +166,7 @@ form {
 
 .userHeading {
     color: #f0b927;
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Titan One', cursive;
 }
 
 /***password-reset.html**/
@@ -189,7 +177,7 @@ form {
 
 .passwordReset {
     color: #f0b927;
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Titan One', cursive;
 }
 
 .reset-btn {
@@ -225,16 +213,15 @@ form {
 
 .homeHeader {
     color: #f0b927;
-    font-family: 'Abhaya Libre', serif;
-    font-weight: 900;
+    font-size: black;
+    font-family: 'Titan One', cursive;
 }
 
 /***Services Section***/
 
 .servicesHeader {
     color: #2b9dc4;
-    font-family: 'Abhaya Libre', serif;
-    font-weight: 600;
+    font-family: 'Titan One', cursive;
 }
 
 .page-section h3.section-subheading {
@@ -305,8 +292,7 @@ form {
 
 .signupHome {
     color: #87497a;
-    font-family: 'Abhaya Libre', serif;
-    font-weight: 600;
+    font-family: 'Titan One', cursive;
 }
 
 .signupTextHome {
@@ -355,8 +341,7 @@ form {
 
 .contactUsHeading {
     color: #87497a;
-    font-family: 'Abhaya Libre', serif;
-    font-weight: 600;
+    font-family: 'Titan One', cursive;
     text-align: center;
 }
 
