@@ -117,8 +117,6 @@ caption p {
     background-color: #fff;
 }
 
-
-
 .btn-default {
     background-color: #2b9dc4;
     color: white;
@@ -335,6 +333,7 @@ caption p {
 
 #contactUs {
     background-color: #f8f8f8;
+    padding-bottom: 20px;
 }
 
 .contactUsHeading {
@@ -349,3 +348,20 @@ caption p {
 }
 
 /***footer section***/
+
+footer {
+    padding-top: 20px;
+    background-color: #874979;
+    color: #f8f8f8;
+}
+.footerText {
+    font-size:12px;
+}
+
+
+.copyright {
+    background-color:#87497a;
+    color: white;
+}
+
+
