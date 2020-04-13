@@ -74,7 +74,18 @@ a.nav-link {
 
 .center_div{
     margin: 0 auto;
-    width:80% /* value of your choice which suits your alignment */
+    width:80%;
+}
+
+/**Buttons**/
+
+.btn-default {
+    background-color: #2b9dc4;
+    color: white;
+}
+
+a:hover, a:focus {
+    color: #fcba04;
 }
 
 /**cart.html**/
@@ -117,10 +128,6 @@ caption p {
     background-color: #fff;
 }
 
-.btn-default {
-    background-color: #2b9dc4;
-    color: white;
-}
 /***Registration Page**/
 
 .registerPage h2 {
@@ -310,6 +317,7 @@ caption p {
 }
 
 /***about us section***/
+
 #aboutUs {
     margin-top: 30px;
     padding-top: 20px;
@@ -329,6 +337,9 @@ caption p {
     border: none;
 }
 
+.fa-arrow-circle-down {
+    color:#e76665;
+}
 /***contact us page***/
 
 #contactUs {

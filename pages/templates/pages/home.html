@@ -15,7 +15,7 @@
 			<hr class="my-4">
             <br>
 			<p>Want exclusive access to resources, tutorials and more?</p>
-			<a class="btn btn-default" href="#" role="button">sign up</a>
+			<a class="btn btn-default" href="{% url 'registration' %}" role="button">sign up</a>
 		</div>
 	</div>
 </header>
@@ -76,10 +76,10 @@
 			<br>
 			<p>Create a free account to get access to the best of TriFlake Studio. </p>
 		</div>
-		<button type="submit" class="btn btn-default">sign up now</button>
+		<a type="submit" class="btn btn-default" href="{% url 'registration' %}">sign up now</a>
 		<div class="signupLogin">
 			<p><i class="fas fa-heart"></i> already registered?
-				<button type="submit" class="btn btn-default loginHome">log in</button>
+				<a type="submit" href="{% url 'login' %}" class="btn btn-default loginHome">log in</a>
 			</p>
 		</div>
 	</div>
@@ -108,21 +108,14 @@
 				<br>
 				<p>We are based in Ireland, but we <i class="fas fa-heart"></i> remote! </p>
                 <br>
-				<hr>
+                <p>Want to chat about a project? Simply send us a message through the form below. <i class="fas fa-arrow-circle-down"></i></p>
                 <br>
-				<p>
-					If you have an idea for a project, simply fill in our contact form below and send us a message. For
-					exclusive access to products, resources, and tutorials, create your own user account.
-					<br>
-					<br>
-					<button type="submit" class="btn btn-default">sign up now</button>
-
-				</p>
+				
 			</div>
 		</div>
 </section>
 <!-- contact us section -->
-<section class="contactUs" id="contactUs">
+<section class="contactUs" id="contactUsSection">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-lg-4 col-md-4 col-xs-2 order-lg-2">
@@ -182,7 +175,7 @@
 			<div class="col-lg-4">
 				<h5 class="text-uppercase mb-4">Want goodies?  <i class="fas fa-gift"></i></h5>
 				<p class="mb-0">Create a user account for exclusive access to resources, tutorials and more <a
-						href="#sign-up">Sign Up</a>.</p>
+						href="{% url 'registration' %}">Sign Up</a>.</p>
                         <br>
 			</div>
 		</div>
