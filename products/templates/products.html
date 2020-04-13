@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load bootstrap_tags %}
-{% block page_title %}Shop{% endblock %}
+{% block page_title %}Shop TriFlake Studios{% endblock %}
 
 {% block content %}
 <div class="container">
@@ -8,12 +8,13 @@
 		<h2 class="shopHeading display-4">SHOP</h2>
 		<h3 class="shopSubHeading text-muted">You can book directly or you can chat to us about your needs</h3>
 	</div>
+    <!-----shop products--->
 	<div class="row row-flex">
 		{% for product in products %}
 		<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
 			<div class="panel-body">
 				<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
-                <br>
+				<br>
 				<h4 class="shopProduct">{{ product.name }}</h4>
 				<p class="product-description">{{ product.description }}</p>
 				<p class="shopPrice"><i class="fas fa-euro-sign"></i> {{ product.price }}</p>
@@ -31,5 +32,46 @@
 		</div>
 		{% endfor %}
 	</div>
+    <br>
+    <hr>
+    <br>
+    <div class="col-lg-12 text-center">
+				<h4 class="section-subheading shopSignup">Dont see what you are looking for here?</h4>
+                <p>Drop us a line and tell us what you are looking for, we'd love to hear from you</p>
+                <a type="submit" class="btn btn-default" href="/home/#contactUsSection">contact us</a>
+	</div>
+
+        <br>
+    <br>
 </div>
+<footer class="footer text-center">
+	<div class="container footerText">
+		<div class="row">
+			<!-- Footer Location-->
+			<div class="col-lg-4 mb-5 mb-lg-0">
+				<h5 class="text-uppercase mb-4">Meet Us <i class="far fa-comment-dots"></i></h5>
+				<p class="mb-0">We are based in Kerry, but we love <i class="fas fa-heart"></i> remote! We can accomodate your timeline</p>
+			</div>
+			<!-- Footer Social Icons-->
+			<div class="col-lg-4 mb-5 mb-lg-0">
+				<h5 class="text-uppercase mb-4">connect  <i class="fas fa-share-alt"></i></h5>
+				<a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-facebook-f"></i></a><a
+					class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-twitter"></i></a><a
+					class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a><a
+					class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-github"></i></a>
+			</div>
+			<!-- Footer About Text-->
+			<div class="col-lg-4">
+				<h5 class="text-uppercase mb-4">Want goodies?  <i class="fas fa-gift"></i></h5>
+				<p class="mb-0">Create a user account for exclusive access to resources, tutorials and more <a
+						href="{% url 'registration' %}">Sign Up</a>.</p>
+                        <br>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Copyright Section-->
+<section class="copyright py-4 text-center text-warning">
+	<div class="container"><small>Copyright © TriFlake Studio 2020</small></div>
+</section>
 {% endblock %}
