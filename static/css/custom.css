@@ -460,3 +460,36 @@ footer {
 .cartProduct {
     padding-top: 10px;
 }
+
+/***Checkout Page***/
+
+.checkoutQ {
+    font-weight: bold;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.checkoutEuro {
+    color: #874979
+}
+
+.checkoutTotal {
+    padding-left: 15px;
+}
+
+.checkoutText {
+    padding-left: 15px;
+    color: #f38226;
+}
+
+.checkoutThankYou {
+    padding-left: 15px;
+    color: #f38226;
+}
+
+.alertMessage {
+    padding: 20px;
+    background-color: #4dd0e1
+}
