@@ -340,9 +340,11 @@ caption p {
 .fa-arrow-circle-down {
     color:#e76665;
 }
+/***end about us page***/
+
 /***contact us page***/
 
-#contactUs {
+.contactUs {
     background-color: #f8f8f8;
     padding-bottom: 20px;
 }
