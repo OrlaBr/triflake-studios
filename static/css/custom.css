@@ -375,4 +375,39 @@ footer {
     color: white;
 }
 
+/***Shop Page***/
 
+.shopHeading {
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #2b9dc4;
+    font-family: 'Titan One', cursive;
+}
+
+.shopSubHeading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 25px;
+    text-transform: none;
+}
+
+.shopProduct {
+    color:#874979;
+}
+
+.shopPrice {
+    color:#874979;
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+.product-description {
+    font-size: 14px;
+}
+
+.input-group-btn {
+    padding-left: 20px;
+}
