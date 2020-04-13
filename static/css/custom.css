@@ -411,3 +411,52 @@ footer {
 .input-group-btn {
     padding-left: 20px;
 }
+
+/***Cart Page***/
+
+.cartHeading {
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #2b9dc4;
+    font-family: 'Titan One', cursive;
+}
+
+.input-group-addon {
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.cartTotal {
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.fa-shopping-bag {
+    padding-left: 5px;
+}
+
+.cartNumber {
+    font-weight: bold;
+}
+.form-control {
+    color: black;
+}
+
+.cartBtn {
+    margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+
+  .form-inline {
+    flex-direction: column;
+  }
+  .mobileCartTotal {
+      text-align: center;
+  }
+}
+
+.cartProduct {
+    padding-top: 10px;
+}
