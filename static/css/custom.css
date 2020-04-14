@@ -191,8 +191,14 @@ caption p {
     color:#c67605;
 }
 
+.controls {
+    padding-bottom: 15px;
+}
 
-
+.cstm-height-card .card-img-top {
+  height: 100px;
+  object-fit: cover;
+}
 
 /***end user Page**/
 
