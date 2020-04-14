@@ -47,9 +47,11 @@
 						<div class="form-group">
 							<input type="email" name="email" id="email" class="form-control" placeholder="email address" required>
 						</div>
-                        <p class="profileEmail">Subject</p>
+                        <div class="userEmail">
+                            <h5>Subject</h5>
+                        </div>
                         <select class="browser-default custom-select mb-4">
-                            <option value="1" disabled selected>Choose option</option>
+                            <option value="1" disabled selected>choose option</option>
                             <option value="2">Urgent! Graphics needed asap</option>
                             <option value="3">Marketing request</option>
                             <option value="4">UX/Design request</option>
@@ -58,8 +60,15 @@
                         </select>
 
 						<div class="form-group">
-							<textarea rows="5" name="message" id="message" class="form-control" placeholder="write your message here..." required></textarea>
+							<textarea rows="1" name="requirements" id="requirments" class="form-control" placeholder="project requirements" required></textarea>
 						</div>
+                        <div class="form-group">
+							<textarea rows="5" name="message" id="message" class="form-control" placeholder="write your message here" required></textarea>
+						</div>
+                        <div class="controls"><label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;If urgent, please enter date needed by</label>
+        <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+
+      </div> 
 
 						<button type="submit" class="btn btn-default" id="contact-button">Send Message</button>
 					</form>

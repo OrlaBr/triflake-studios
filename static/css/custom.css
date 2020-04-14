@@ -179,12 +179,20 @@ caption p {
 
 /***end user Login Page**/
 
-/***User Page**/
+/***User profile Page**/
 
 .userHeading {
     color: #f0b927;
     font-family: 'Titan One', cursive;
 }
+
+.userEmail {
+    padding: 5px;
+    color:#c67605;
+}
+
+
+
 
 /***end user Page**/
 
