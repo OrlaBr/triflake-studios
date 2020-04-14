@@ -38,6 +38,9 @@ a.nav-link {
   border-color: rgb(255,102,203);
 }
 
+/***end navbar**/
+
+
 /**shopping-cart**/
 
 .nav-cart  {
@@ -58,6 +61,8 @@ a.nav-link {
     background-color: #c67605;
 }
 
+/***end shopping cart **/
+
 /**search bar**/
 
 .active-cyan-2 input[type=text]:focus:not([readonly]) {
@@ -77,6 +82,8 @@ a.nav-link {
     width:80%;
 }
 
+/**end search bar**/
+
 /**Buttons**/
 
 .btn-default {
@@ -87,6 +94,8 @@ a.nav-link {
 a:hover, a:focus {
     color: #fcba04;
 }
+
+/** end buttons**/
 
 /**cart.html**/
 
@@ -128,6 +137,8 @@ caption p {
     background-color: #fff;
 }
 
+/**end cart.html**/
+
 /***Registration Page**/
 
 .registerPage h2 {
@@ -144,6 +155,7 @@ caption p {
     font-size: 18px;
 }
 
+/*** end egistration Page**/
 
 /***User Login Page**/
 
@@ -165,12 +177,16 @@ caption p {
     padding-top: 20px;
 }
 
+/***end user Login Page**/
+
 /***User Page**/
 
 .userHeading {
     color: #f0b927;
     font-family: 'Titan One', cursive;
 }
+
+/***end user Page**/
 
 /***password-reset.html**/
 
@@ -186,6 +202,8 @@ caption p {
 .reset-btn {
     margin-top: 20px;
 }
+
+/***end password-reset.html**/
 
 /***home page***/
 
@@ -219,6 +237,8 @@ caption p {
     font-size: black;
     font-family: 'Titan One', cursive;
 }
+
+/***end home page***/
 
 /***Services Section***/
 
@@ -277,6 +297,9 @@ caption p {
     padding-bottom: 20px;
     margin-top: 30px;
 }
+
+/*** end Services Section***/
+
 /***signup call to action***/
 
 .signup-section {
@@ -315,6 +338,8 @@ caption p {
     color:#e76665;
     font-size: 20px;
 }
+
+/***end signup call to action***/
 
 /***about us section***/
 
@@ -360,6 +385,8 @@ caption p {
     color: #3e4347;
 }
 
+/***end contact us page***/
+
 /***footer section***/
 
 footer {
@@ -376,6 +403,8 @@ footer {
     background-color:#87497a;
     color: white;
 }
+
+/***end footer section***/
 
 /***Shop Page***/
 
@@ -469,6 +498,8 @@ footer {
     padding-top: 10px;
 }
 
+/*** end cart Page***/
+
 /***Checkout Page***/
 
 .checkoutQ {
@@ -501,3 +532,5 @@ footer {
     padding: 20px;
     background-color: #4dd0e1
 }
+
+/***end checkout Page***/

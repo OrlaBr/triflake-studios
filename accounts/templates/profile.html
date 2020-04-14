@@ -5,20 +5,72 @@
 
 {% block content %}
 
-  <!-- profile page -->
+<!-- profile page -->
 <div class="container">
 
-    <!-- Jumbotron Header -->
-    <header class="jumbotron my-4">
-      <h2 class="display-3 userHeading"> Welcome {{ profile }}!</h2>
-      <p class="lead">Welcome to our Members page. As a valuable signed up member of the TriFlake Studio Family, you will get access to freebies and tutorials. We will also give you exclusive previews to our latest services and products.</p>
-      <br>
-      <p>As a valued client we also give you your first consultation free, so if you have an idea for a project, and would like to chat with us, simply drop us a message, and we'll get back to you </p>
-      <a href="#" class="btn btn-default">send a message</a>
-    </header>
+	<!-- Jumbotron Header -->
+	<header class="jumbotron my-4">
+		<h2 class="display-3 userHeading"> Welcome {{ profile }}!</h2>
+		<p class="lead">Welcome to our Members page. As a valuable signed up member of the TriFlake Studio Family, you
+			will get access to freebies and tutorials. We will also give you exclusive previews to our latest services
+			and products.</p>
+		<br>
+		<p>As a valued client we also give you your first consultation free, so if you have an idea for a project, and
+			would like to chat with us, simply drop us a message, and we'll get back to you </p>
+		<a href="/home/#contactUsSection" class="btn btn-default">send a message</a>
+	</header>
 
- 
-  <!-- end profile page -->
 
- 
-{% endblock %}
+	<!-- contact us section -->
+	<section class="contactUs" id="contactUsSection">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-4 col-md-4 col-xs-2 order-lg-2">
+					<div class="text-center">
+						<img class="img-fluid" src="/media/triflake-studio.jpg" alt="">
+                    </div>
+				</div>
+					<!-- form heading -->
+				<div class="col-lg-8 col-md-8 col-xs-10">
+					<div class="p-5">
+						<h2 class="contactUsHeading display-5">SPECIAL SERVICE</h2>
+						<br>
+						<p class="contactUsText"> As a valued customer with TriFlake Studio, we will prioritize your
+								needs. Have someting urgent you need? Fill out this form and skip the queue
+						</p>
+						<br>
+							<!-- form -->
+					<form class="contract-form form-content">
+						<div class="form-group">
+							<input type="text" name="name" id="name" class="form-control" placeholder="name" required>
+                        </div>
+						<div class="form-group">
+							<input type="email" name="email" id="email" class="form-control" placeholder="email address" required>
+						</div>
+                        <p class="profileEmail">Subject</p>
+                        <select class="browser-default custom-select mb-4">
+                            <option value="1" disabled selected>Choose option</option>
+                            <option value="2">Urgent! Graphics needed asap</option>
+                            <option value="3">Marketing request</option>
+                            <option value="4">UX/Design request</option>
+                            <option value="5">Request a callback</option>
+                            <option value="6">Need help with something </option>
+                        </select>
+
+						<div class="form-group">
+							<textarea rows="5" name="message" id="message" class="form-control" placeholder="write your message here..." required></textarea>
+						</div>
+
+						<button type="submit" class="btn btn-default" id="contact-button">Send Message</button>
+					</form>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!----product form-->
+
+	<!-- end profile page -->
+
+
+	{% endblock %}
