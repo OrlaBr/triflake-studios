@@ -23,7 +23,7 @@ from checkout import urls as urls_checkout
 from products.views import all_products
 from django.views import static
 from .settings import MEDIA_ROOT
-from pages.views import HomeView
+from pages.views import HomeView, PortfolioPageView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -34,5 +34,6 @@ urlpatterns = [
     url(r'^search/', include(urls_search)),
     url(r'^checkout/', include(urls_checkout)),
     url(r'^home', HomeView.as_view(), name='home'),
-    url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
+    url(r'^portfolio', PortfolioPageView.as_view(), name='portfolio'),
+    url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT}),
 ]
