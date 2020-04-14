@@ -779,7 +779,14 @@ footer {
 }
 
 .portfolioSubHeading {
-    padding: 20px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.clientList {
+    margin: 10px;
+    background-color: #f8f8f8;
+    text-align: center;
 }
 
 
