@@ -1,10 +1,82 @@
 {% extends "base.html" %}
 {% load bootstrap_tags %}
 
-{% block page_title %}Portfolio{% endblock %}
+{% block page_title %}Portfolio TriFlake Studios{% endblock %}
 {% block title %}Portfolio{% endblock %}
 
 {% block content %}
-<h1>Hello World</h1>
+
+<!-- Portfolio Grid -->
+
+<section class="page-section" id="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="homeHeader display-4 text-uppercase">Portfolio</h2>
+				<h3 class="section-subheading text-muted portfolioSubHeading">a selection of our projects</h3>
+			</div>
+		</div>
+		<div class="row bg-light">
+			<div class="col-md-4 col-sm-6 portfolio-item">
+				<img class="img-fluid" src="/media/ecommerce.jpg" alt="">
+				<div class="portfolio-caption">
+                <br>
+					<h4>eCommerce Summit</h4>
+					<br>
+					<p class="text-muted">range of graphics for eCommerce Summit incl banners, brochures and digital media</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item">
+				<img class="img-fluid" src="/media/grow-remote.jpg" alt="">
+				<div class="portfolio-caption">
+                <br><br>
+					<h4>Grow Remote</h4>
+					<br>
+					<p class="text-muted">Visual facilitation and graphic design of the Grow Remote Conference</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item">
+				<img class="img-fluid" src="/media/wild-design.jpg" alt="">
+				<div class="portfolio-caption">
+					<h4>Wild Design</h4>
+					<br>
+					<p class="text-muted">Website, digital and print media review and redesign</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item">
+				<img class="img-fluid" src="/media/culturenight.jpg" alt="">
+				<div class="portfolio-caption">
+                <br>
+					<h4>Culture Night</h4>
+					<br>
+					<p class="text-muted">Poster design & media campaign for Culture Night event</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item">
+				<img class="img-fluid" src="/media/corkvoices.jpg" alt="">
+				<div class="portfolio-caption">
+					<h4>Cork Voices</h4>
+					<br>
+					<p class="text-muted">Graphics & media Campaign for Ireland's first participitory budgeting campaign</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item">
+				<img class="img-fluid" src="/media/hyperbolic-sketch.jpg" alt="">
+				<div class="portfolio-caption">
+                <br>
+					<h4>Irish Hyperbolic Crocheted Coral Reef</h4>
+					<br>
+					<p class="text-muted">Illustration and poster design for touring exhibition</p>
+				</div>
+			</div>
+		</div>
+        <div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="homeHeader display-4 text-uppercase">Our Clients</h2>
+				<h3 class="section-subheading text-muted portfolioSubHeading">We are delighted to have partnered with a variety of SMEs, events and organisations</h3>
+			</div>
+		</div>
+	</div>
+</section>
 
 {% endblock %}
