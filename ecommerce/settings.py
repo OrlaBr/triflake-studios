@@ -31,7 +31,7 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['triflake-studios.herokuapp.com']
 
 
 # Application definition
