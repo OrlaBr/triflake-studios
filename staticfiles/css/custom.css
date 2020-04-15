@@ -1,0 +1,640 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/***Navbar**/
+
+.navbar {
+    background-color:#f8f8f8;
+}
+
+.navbar a {
+    color: #f0b927;
+}
+
+.navbar-brand {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: 'Titan One', cursive;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #f0b927;
+}
+
+a.nav-link {
+    color: #874979;
+}
+.navbar-toggler {
+  border-color: #f0b927;
+  background-color: whitesmoke
+} 
+
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+}
+
+/***end navbar**/
+
+
+/**shopping-cart**/
+
+.nav-cart  {
+    font-size: 25px;
+    color: #4dd0e1;
+}
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+
+/***end shopping cart **/
+
+/**search bar**/
+
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+}
+.active-cyan input[type=text] {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+}
+.active-cyan .fa, .active-cyan-2 .fa {
+  color: #4dd0e1;
+}
+
+.center_div{
+    margin: 0 auto;
+    width:80%;
+}
+
+/**end search bar**/
+
+/**Buttons**/
+
+.btn-default {
+    background-color: #2b9dc4;
+    color: white;
+}
+
+a:hover, a:focus {
+    color: #fcba04;
+}
+
+/** end buttons**/
+
+/**cart.html**/
+
+.product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+caption p {
+    word-wrap: break-word;
+}
+
+.row.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.panel-default {
+    border-color: transparent;
+    padding: 0 10px;
+}
+
+.panel-body {
+    height: 100%;
+    border: 1px solid #ddd;
+}
+
+.product-description {
+    min-height: 40px;
+}
+
+
+.icon-bar {
+    background-color: #fff;
+}
+
+/**end cart.html**/
+
+/***Registration Page**/
+
+.registerPage h2 {
+    color: #f0b927;
+    font-family: 'Titan One', cursive;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.registerText {
+    color: #161618;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*** end egistration Page**/
+
+/***User Login Page**/
+
+.userLoginPage h2 {
+    color: #f0b927;
+    font-family: 'Titan One', cursive;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.signUpText {
+    color:#A9A9A9;
+    text-align: center;
+}
+
+.forgotPassword {
+    color: rgb(104, 102, 102);
+    padding-top: 20px;
+}
+
+/***end user Login Page**/
+
+/***User profile Page**/
+
+.userHeading {
+    color: #f0b927;
+    font-family: 'Titan One', cursive;
+}
+
+.userEmail {
+    padding: 5px;
+    color:#c67605;
+}
+
+.controls {
+    padding-bottom: 15px;
+}
+
+.cstm-height-card .card-img-top {
+  height: 100px;
+}
+
+#portfolio .portfolio-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+/***end user Page**/
+
+/***password-reset.html**/
+
+.passwordResetPage {
+    margin: auto;
+}
+
+.passwordReset {
+    color: #f0b927;
+    font-family: 'Titan One', cursive;
+}
+
+.reset-btn {
+    margin-top: 20px;
+}
+
+/***end password-reset.html**/
+
+/***home page***/
+
+.masthead {
+  min-height: 20rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("/media/masthead-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+}
+
+.header {
+    margin: auto;
+    padding-right: 30px;
+}
+
+.homeHeader {
+    color: #f0b927;
+    font-family: 'Titan One', cursive;
+}
+
+/***end home page***/
+
+/***Services Section***/
+
+.servicesHeader {
+    color: #2b9dc4;
+    font-family: 'Titan One', cursive;
+}
+
+.page-section h3.section-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 50px;
+  text-transform: none;
+}
+
+.circle-container {
+    width: 125px;
+    height: 125px;
+    padding: 5px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding-bottom: 10px
+}
+.circle-cover-bg {
+    background: url("/media/sm-triangle.jpg") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.circle-cover-bg2 {
+    background: url("/media/sm-sketch.jpg") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.circle-cover-bg3 {
+    background: url("/media/kleb-random.jpg") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.service-heading {
+    padding-top: 20px;
+}
+
+.service-text {
+    padding-top: 20px;
+    color: #3e4347;
+}
+
+.page-section {
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+/*** end Services Section***/
+
+/***signup call to action***/
+
+.signup-section {
+    min-height: 20rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("/media/signup-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.signupHome {
+    color: #87497a;
+    font-family: 'Titan One', cursive;
+}
+
+.signupTextHome {
+    padding: 20px;
+}
+
+.signupLogin {
+    padding-top: 100px;
+    font-size: 12px;
+}
+
+.loginHome {
+    font-size: 12px;
+}
+
+.fa-heart {
+    color:#e76665;
+    font-size: 20px;
+}
+
+/***end signup call to action***/
+
+/***about us section***/
+
+#aboutUs {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.aboutus-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 25px;
+    text-transform: none;
+}
+
+.img-thumbnail {
+    height: 200px;
+    margin: auto;
+    border: none;
+}
+
+.fa-arrow-circle-down {
+    color:#e76665;
+}
+/***end about us page***/
+
+/***contact us page***/
+
+.contactUs {
+    background-color: #f8f8f8;
+    padding-bottom: 20px;
+}
+
+.contactUsHeading {
+    color: #87497a;
+    font-family: 'Titan One', cursive;
+    text-align: center;
+}
+
+.contactUsText {
+    text-align: center;
+    color: #3e4347;
+}
+
+/***end contact us page***/
+
+/***footer section***/
+
+footer {
+    padding-top: 20px;
+    background-color: #874979;
+    color: #f8f8f8;
+}
+.footerText {
+    font-size:12px;
+}
+
+
+.copyright {
+    background-color:#87497a;
+    color: white;
+}
+
+/***end footer section***/
+
+/***Shop Page***/
+
+.shopHeading {
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #2b9dc4;
+    font-family: 'Titan One', cursive;
+}
+
+.shopSubHeading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 25px;
+    text-transform: none;
+}
+
+.shopProduct {
+    color:#874979;
+}
+
+.shopPrice {
+    color:#874979;
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+.product-description {
+    font-size: 14px;
+}
+
+.input-group-btn {
+    padding-left: 20px;
+}
+
+.shopSignup {
+    color: #c67605;
+}
+
+/***end shop page***/
+
+/***Cart Page***/
+
+.cartHeading {
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #2b9dc4;
+    font-family: 'Titan One', cursive;
+}
+
+.input-group-addon {
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.cartTotal {
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.fa-shopping-bag {
+    padding-left: 5px;
+}
+
+.cartNumber {
+    font-weight: bold;
+}
+.form-control {
+    color: black;
+}
+
+.cartBtn {
+    margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+
+  .form-inline {
+    flex-direction: column;
+  }
+  .mobileCartTotal {
+      text-align: center;
+  }
+}
+
+.cartProduct {
+    padding-top: 10px;
+}
+
+/*** end cart Page***/
+
+/***Checkout Page***/
+
+.checkoutQ {
+    font-weight: bold;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.checkoutEuro {
+    color: #874979
+}
+
+.checkoutTotal {
+    padding-left: 15px;
+}
+
+.checkoutText {
+    padding-left: 15px;
+    color: #f38226;
+}
+
+.checkoutThankYou {
+    padding-left: 15px;
+    color: #f38226;
+}
+
+.alertMessage {
+    padding: 20px;
+    background-color: #4dd0e1
+}
+
+/***end checkout Page***/
+
+/***Portfolio Page***/
+
+
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+
+#portfolio .portfolio-item .portfolio-caption p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 auto;
+  }
+}
+
+.portfolioSubHeading {
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.clientList {
+    margin: 10px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.portfolioContact {
+    color: #874979;
+    padding: 10px;
+}
+
+.portfolio-item {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 40px;
+}
+
+.profileItem {
+    padding-top: 20px;
+}
+
+.portfolioContactUs {
+    padding-bottom: 20px;
+}
