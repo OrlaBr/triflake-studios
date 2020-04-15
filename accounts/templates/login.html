@@ -5,14 +5,16 @@
 {% block page_title %}Login Page{% endblock %}
 
 
-
 {% block content %}
+
+<!--login page-->
     <div class="container userLoginPage">
         <div class="row">
             <h2 class="loginHeading">LOG IN</h2>
         </div>
         <div class="loginPage">
             <p class="registerText">Welcome back! You can log into your account here</p>
+            <!--login form-->
             <form method="POST">
                 {% csrf_token %}
                 {{ login_form | as_bootstrap }}
