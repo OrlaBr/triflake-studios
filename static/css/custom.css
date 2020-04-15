@@ -741,7 +741,8 @@ footer {
 }
 
 .portfolioContact {
-    color: #874979
+    color: #874979;
+    padding: 10px;
 }
 
 .portfolio-item {
@@ -754,4 +755,8 @@ footer {
 
 .profileItem {
     padding-top: 20px;
+}
+
+.portfolioContactUs {
+    padding-bottom: 20px;
 }
