@@ -1,81 +1,90 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>{% block page_title %}{% endblock %}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TriFlake Studios</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+        <link rel="icon" type="image/png" href="/media/favicon.png">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
 
-<head>
-	<title>{% block page_title %}{% endblock %}</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>TriFlake Studios</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="{% static 'css/custom.css' %}">
-    <link rel="icon" type="image/png" href="/media/favicon.png">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-	</script>
-    
-	<!---- js for certain pages----->
-	{% block head_js %}
-	{% endblock head_js %}
-	<!---- endjs----->
-</head>
+        <!---- js for certain pages----->
+        {% block head_js %}
+        {% endblock head_js %}
+        <!---- endjs----->
+
+    </head>
+
+
 <!---- body--------------------------------->
 
 <body id="pageTop">
+
 	<!----Navbar----->
 	<section id="navbar">
 		<nav class="navbar navbar-expand-lg navbar-default fixed">
 			<a class="navbar-brand brand-logo"
-				href="{% url 'home' %}"><img src="/media/favicon.png">   TriFlake Studio</a>
-				<button type="button" class="navbar-toggler collapsed custome-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				href="{% url 'home' %}"><img src="/media/favicon.png" title="logo brand">   TriFlake Studio</a>
+			<button type="button" class="navbar-toggler collapsed custome-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<form class="form-inline active-cyan-3 active-cyan-4 ml-auto" action="{% url 'search' %}"
-						method="get">
-						<i class="fas fa-search" aria-hidden="true"></i>
-						<input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" name="q"
-	            aria-label="Search">
-	        </form>
-						<ul class="navbar-nav ml-auto nav-contents">
-							<li class="nav-item active">
-								<a class="nav-link" href="{% url 'home' %}">home
-									<span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/home/#services">services</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="{% url 'products' %}">shop</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="{% url 'portfolio' %}">portfolio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/home/#aboutUs">about</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/home/#contactUsSection">contact</a>
-							</li>
+
+            <!----search----->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<form class="form-inline active-cyan-3 active-cyan-4 ml-auto" action="{% url 'search' %}"
+					method="get">
+					<i class="fas fa-search" aria-hidden="true"></i>
+					<input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" name="q"
+	                aria-label="Search">
+	            </form>
+                <!----nav links to pages----->
+				<ul class="navbar-nav ml-auto nav-contents">
+						<li class="nav-item active">
+							<a class="nav-link" href="{% url 'home' %}">home
+								<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/home/#services">services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'products' %}">shop</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'portfolio' %}">portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/home/#aboutUs">about</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/home/#contactUsSection">contact</a>
+						</li>
+
+                        <!----user links----->
+
 							{% if user.is_authenticated %}
-							<li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">profile</a></li>
-							<li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">logout</a></li>
-							{% else %}
-							<li class="nav-item"><a class="nav-link" href="{% url 'login' %}">login</a></li>
-							<li class="nav-item"><a class="nav-link" href="{% url 'registration' %}">sign up</a></li>
+							    <li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">profile</a></li>
+							    <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">logout</a></li>
+							    {% else %}
+							        <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">login</a></li>
+							        <li class="nav-item"><a class="nav-link" href="{% url 'registration' %}">sign up</a></li>
 							{% endif %}
 							<li class="nav-item">
 								<a a class="nav-link" href="{% url 'view_cart' %}">
@@ -85,8 +94,8 @@
 									{% endif %}
 								</a>
 							</li>
-						</ul>
-				</div>
+				</ul>
+			</div>
 		</nav>
 	</section>
 
@@ -120,6 +129,10 @@
 
 
 </body>
-
+<!---- footer year js--->
+    <script>
+        var year = new Date().getFullYear().toString();
+        document.getElementById("year").innerHTML = year;
+    </script>
 
 </html>
