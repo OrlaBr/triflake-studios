@@ -36,4 +36,4 @@ urlpatterns = [
     url(r'^home', HomeView.as_view(), name='home'),
     url(r'^portfolio', PortfolioPageView.as_view(), name='portfolio'),
     url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT}),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
