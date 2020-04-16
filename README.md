@@ -219,7 +219,7 @@ Automatic deploys from  master are enabled
 
 ## Testing
 
-####Manual Testing
+#### Manual Testing
 This web application has been manually tested with different scenarios that the user may experience.
 *HomePage*
  - Homepage - Click on the brand logo in the navigation bar. Be directed back to ‘home’ 
@@ -261,8 +261,6 @@ _Code Validation:_
 * <a href="http://pep8online.com/" target="_blank">PEP8</a> - Python validator
 * <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en" target="_blank">Chrome Lens</a> - Accessibility validator
 
-_Notes_ 
-        - Warning on html pages - this is the because the validators do not recognise Flask script
 
 _Elements testing_
 
@@ -281,7 +279,9 @@ _Elements testing_
 | Sign in 	    | ability to sign in user section       | ✔      	| ✔       	|
 | Password Reset| ability to reset password             | ✔      	| ✔       	|
 
-<img src="ux/app-devices.png" height="200" title="image of five-app on different devices from mobile to large desktop">
+
+
+<img src="/media/cross-browser.jpg" title="triflake studios website on different devices" height="300">
 
 | Testing   | Cross-browser/ cross-device           |
 |---------	|--------------------------------------	|
@@ -289,4 +289,37 @@ _Elements testing_
 | Device    | Mobile, Tablet, Desktop               |
 | Systems   | iOS, Android, Linux                   |
 
-<img src="/media/cross-browser.jpg" title="triflake studios website on different devices" height="300">
+
+#### Testing 
+
+*Stripe*
+A key element of this project was to create a working shopping cart. For this I used Stripe. It was installed in the build phase in Gitpod, and I did a preliminary test before adding my products, and wentt through the process of filling out the payments form, using Stripes own test credit card.
+```Stripe Credit Card: 42424242424242
+    CCV No: 111
+```
+I successfully bought an item
+<img src="/media/test-stripe.jpg" title="screenshot of strip dashboard with payment" height="100">
+And my successful message worked
+<img src="/media/test-stripe.jpg" title="screenshot of strip dashboard with payment" height="100">
+
+*Products*
+I ran asuccessful test when building the products app to check the database was working successfully
+```
+class ProductTests(TestCase):
+
+    def test_str(self):
+        test_name = Product(name='A product')
+        self.assertEqual(str(test_name), 'A product')
+```
+<img src="/media/products-test.jpg" title="screenshot of strip dashboard with payment" height="100">
+
+### Post Deployment Snag List_
+I had  many bugs to fix after deployment.
+ - Image paths - image paths differ on Gitpod and Github. I had to modify the paths of the images to display properly - corrected
+ - Missing metatags in header - added
+ - Spelling errors - fixed
+ *Console log errors:*
+ - Favicon missing - added
+ - Chrome 'SameSite' cookies error - New Chrome cookie policy. 
+ - Styling Error: With concentration on the details and the functionality of the website, it’s easy to miss the more obvious mistakes. Working through the password reset procedure, I realised I had not added the uniform CSS styling to these pages
+ - Accessibility Errors - its easy to forget to add accessibility tags, alts and arias, so I went back over all the website, page by page, and added in as many accessibility features as I could find. This included alt tags to images, aria-hidden to font awesome icons, and titles to any icons that acted as buttons.
