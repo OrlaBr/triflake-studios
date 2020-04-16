@@ -25,8 +25,7 @@ the Full Stack Developer Bootcamp.
 The main function of the website is to create a visible presence for TriFlake Studio, a creative design studio.
 To create the MVP I used the principles of Lean UX:
 
-<img src="/media/triflake-studio.jpg" title="trifkale studio logo" height="300">
-<img src="/media/leadnux2.jpg" title="Cycle of Lean UX" height="300">
+<img src="/media/leanux2.jpg" title="Cycle of Lean UX" height="300">
 
  - Outcomes, assumptions, hypotheses
  - Design
@@ -54,7 +53,20 @@ common features, and new features that might appeal to both their existing clien
         - Shop - directly bookable consultancy sessions. Unusual for a design studio, but can help them grow as a forward thinking and approachable company. This could be a potential area of growth for the studio, in proposing different types of consultancy sessions, at different prices. It may appeal to SMEs with tight budgets and limited timelines, knowing upfront and directly how much sessions will cost. This could also help with cash flow, with prepaid work sessions providing instant payment, as opposed to the normal approach of chasing cheques. 
         - Client sign in area - again unusual for a design studio, but providing existing and potential customers with the feeling that they are getting more value for their money than just the consultancy or design work. This is another huge area of growth, not just for building potential customer base, but developing the studios reputation as resourceful, approachable, and as leaders in design innovation and trends.
 ---
-- *Structure*: A minimal website, with simple content yet visually stunning. The website needed to reflect the mood and work of the studio. 
+- *Structure Plane*: A minimal website, with simple content yet visually stunning. The website needed to reflect the mood and work of the studio. 
 With prominent calls to action, portfolio and shop features and sign in area. 
 
 ---
+ - *Skeleton Plane* : Top priority is awareness about the studio and its services. Simple shapes and colours, give a sense of unity with playfulness. Minimalist but with bright colours and large triangles feature throughout the website, to play on the name and the logo. 
+    - Support and connect with the project, through call to actions and links
+    - Very structured navbar, with footer just on certain pages.
+    - Deliberate color scheme, using the yellow, purple and blue that is in the logo.
+
+
+Using UX strategies to develop the features and schema of the website , I first used post-its to build the initial wireframe, and develop the necessary features. I focused on the most prominent and important features I had listed in the strategy and scope research. I then developed the website layout, reframing the posits until I had a clearer idea of the website page layouts with links and buttons. 
+
+<img src="/media/landing-page-2.jpg" title="Cycle of Lean UX" height="300">
+
+The next step was to develop the post-its groundwork into a paper wireframe of the website in both mobile and desktop view. Working on each page and section, developing the different placement and features, call to actions, and more.
+
+You can see a pdf of my process here: [ux-process mockup](link)
