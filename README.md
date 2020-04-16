@@ -377,12 +377,14 @@ This was a huge project to undertake, a full stack django ecommerce platform, an
  - A pop up modal to encourage people to create a user account
  - A pop up message when people have sent a message via the contact form
  - Development of a blog to include articles, tutorials and more
- - Instagram api with rolling images in footer, better social connection.
+ - Instagram application with rolling images in footer, better social connection.
 
  ***
 
 ## Credits
-All text by author: Orla Breslin. All graphics and images photos copyright from TriFlake Studio. All icons copyright free from https://fontawesome.com/.
+All text by author: Orla Breslin. 
+All graphics and images photos copyright from TriFlake Studio. 
+All icons copyright free from https://fontawesome.com/.
 
 ***
 ## Acknowledgements
@@ -390,11 +392,12 @@ All text by author: Orla Breslin. All graphics and images photos copyright from 
  
 *Project Django Tutorials:*
  - Code Institute, YouTube Tutorials eg Traversy Media, Academind, Corey Schafer
+
+
 *Github, Gitpod and Markup Tutorials:*
  - Code Institute, Various via Google eg Github Help, Git SCM
 *Extras*
- - smashtheshell on YouTube for a great little tutorial on the HTML5 download button [https://www.youtube.com/watch?v=7c4cNgD5KNA&t=314s]
+ - smashtheshell on YouTube for a great little tutorial on the new HTML5 download button [https://www.youtube.com/watch?v=7c4cNgD5KNA&t=314s]
  ```
-    <a href="/media/insta-graph.jpg" download="Instagram Infograph" alt="thumbnail of Instagram Infograph"
-                                class="btn btn-default"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;download infograph </a>
+    <a href="" download="" alt="">download</a>
  ```
