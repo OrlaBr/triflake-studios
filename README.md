@@ -5,8 +5,17 @@ This website also deploys all my course learning to date with the Code Institute
 
 You can view the deployed website here: <a href="https://triflake-studios.herokuapp.com/home" target="_blank">triflakestudio.herokuapp.com</a>
 
-<img class="img-fluid" src="/media/ecommerce.jpg" alt="image of graphic from ecommerce summit">
+<img class="img-fluid" src="/media/trifkale-studio.jpg" title="trifkale studio logo" height="300">
 
-<img class="img-fluid" src="/media/ux/triflakestudios-designs.jpg" alt="image of graphic from ecommerce summit">
+------
 
-<img src="/ux/triflakestudios-designs.jpg" height="300" title="image of triflake studios website on from mobile and desktop">
+## Table of Contents:
+
+1. [Project outline](#project-outline)
+
+## Project Outline
+The website has a dual purpose. It was created for a new local community group to use, but it also deploys all my course learning to date with the Code Institute. 
+The elements I used in creating this website are all practical techniques I have been learning, working through the User Centric Front End Development modules of 
+the Full Stack Developer Bootcamp.
+
+***
