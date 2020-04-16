@@ -69,4 +69,25 @@ Using UX strategies to develop the features and schema of the website , I first 
 
 The next step was to develop the post-its groundwork into a paper wireframe of the website in both mobile and desktop view. Working on each page and section, developing the different placement and features, call to actions, and more.
 
-You can see a pdf of my process here: [ux-process mockup](link)
+You can see a pdf of my process here: [ux-process mockup](https://github.com/OrlaBr/triflake-studios/blob/master/media/ux-wireframe.pdf).
+
+---
+
+- *Colour and Style* :
+
+Using the visual identity of TriFlake Studio to develop a colour theme. I originally had a variety of colours to choose from, but narrowed down the selection to this:
+You can see the full colour scheme I had to work with here: [colour-scheme](https://github.com/OrlaBr/triflake-studios/blob/master/ux/colour-scheme.jpg), but in the end I chose these colours:
+
+<img src="/media/colours.jpg" title="Colour scheme for TriFlake Studios" height="100">
+
+I used Google Fonts 'Noto Sans', for the main body of the text, and 'Titan One' for the h1 and h2, for impact. It mirrored the visual identity of TriFlake Studio to have large bold colourful headings.
+I then created more visual mockups using the online graphics platform 'Canva'. I developed the mobile view first, and when I was happy with that, I created the desktop version.
+
+<img src="/media/triflake-studio-designs.jpg" title="Screenshot of mobile and desktop view of website" height="500">
+
+
+You can see the mobile mockup here [mobile mockup link](https://github.com/OrlaBr/triflake-studios/blob/master/ux/triflakestudios-mobile-mock-up.pdf)
+You can see the desktop mockup here [desktop mockup link](https://github.com/OrlaBr/triflake-studios/blob/master/ux/triflakestudio-desktop-mock-up.pdf)
+
+
+
