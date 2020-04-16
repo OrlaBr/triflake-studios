@@ -293,17 +293,19 @@ _Elements testing_
 #### Testing 
 
 *Stripe*
-A key element of this project was to create a working shopping cart. For this I used Stripe. It was installed in the build phase in Gitpod, and I did a preliminary test before adding my products, and wentt through the process of filling out the payments form, using Stripes own test credit card.
-```Stripe Credit Card: 42424242424242
-    CCV No: 111
+ - A key element of this project was to create a working shopping cart. For this I used Stripe. It was installed in the build phase in Gitpod, and I did a preliminary test before adding my products, and wentt through the process of filling out the payments form, using Stripes own test credit card.
 ```
-I successfully bought an item
-<img src="/media/test-stripe.jpg" title="screenshot of strip dashboard with payment" height="100">
-And my successful message worked
+    Stripe Credit Card: 42424242424242  CCV No: 111
+```
+ - I successfully bought an item
+<img src="/media/test-stripe-payment.jpg" title="screenshot of strip dashboard with payment" height="100">
+
+ - And my success message worked
 <img src="/media/test-stripe.jpg" title="screenshot of strip dashboard with payment" height="100">
 
 *Products*
-I ran asuccessful test when building the products app to check the database was working successfully
+ - I ran a successful test when building the products app to check the database was working successfully
+
 ```
 class ProductTests(TestCase):
 
@@ -311,15 +313,42 @@ class ProductTests(TestCase):
         test_name = Product(name='A product')
         self.assertEqual(str(test_name), 'A product')
 ```
+
 <img src="/media/products-test.jpg" title="screenshot of strip dashboard with payment" height="100">
 
-### Post Deployment Snag List_
-I had  many bugs to fix after deployment.
- - Image paths - image paths differ on Gitpod and Github. I had to modify the paths of the images to display properly - corrected
+#### Pre Deployment Snag List:
+I had  many bugs to fix during build and after deployment.
+
+*Major fails included*
+
+ - Building the Accounts Folder: I imported the accounts app from a previous project, and doulbechecking all the settings and url code was correect, I could not get the app to work. It turns out I had put the backends.py file into the wrong folder. 
+ - After building the main apps for the project, the accounts, the products, cart sections, 
+    I wanted to create the home page and and work on the navbar, so I could get working links, 
+    and easily move to one page or another before working properly on the styling and customized css. REading through different documentation online in django, and Stackoverflow, 
+    I created what I thought was the correct path to building the home 'pages' app. but after much frazzled thingking, I went back over the Stack Overflow questions/answer I had followed, and realised it was an old post,
+    using older version of django, and I had to take several steps back in my commit history, to fix the error. Learning the benefits of a cgood commit history with meaningful commit messages!
+ - I had issues with the deployment from Gitpod to Heroku and had to avail of tutor support, As I just could not see my error. I had an incorrect error in the Procfile, and this caused a migration fail, from the sqlite database to the postgres database in Heroku.
+  I had also spelled DATABASES wrong in the settings.py file. Small errors, but somethimes the little ones are the hardest to see, and cause the most distress.
+
+<img src="/media/heroku-fail.jpg" title="screenshot of heroku log error" height="150"> <img src="/media/migrate-database-error.jpg" title="screenshot of console log error" height="150">
+
+#### Post Deployment Snag List:
+
+*Major fails included*
+     - When I got my database to migrate to Heroku, the products didnt show. When I went back into sqlite, they were not their either, so I had to manually imput the products again.
+    Luckily, this being an MVP, I had only added the minimal amount of projects, so it was an easy fix.
+     - When tidying up the CSS I had deleted what I thought were unused styles, but it was the Navbar toggle Icon. I had to build a navbar toggle icon myself, in order to style it the way I wanted. 
+     (bootstrap didnt allow me to create different outline and bars). I had to rebuild this toggle icon.
+     - After deployment, I wanted to retest all the interactive elements of the site, so tested the forms and user sign up pages. I realised I hadnt applied my custom CSS styling to the password reset pages and options.
+     I felt this was important to the overall branding of TriFlake Studios.
+     - 
+
+*Minor bugs included:*
+ - Images on Shop page - these appeared smaller than I likes, I needed to resize them - fixed
+ - I had not added the links to the Home Page footer social media icons - added 
  - Missing metatags in header - added
  - Spelling errors - fixed
  *Console log errors:*
  - Favicon missing - added
  - Chrome 'SameSite' cookies error - New Chrome cookie policy. 
- - Styling Error: With concentration on the details and the functionality of the website, it’s easy to miss the more obvious mistakes. Working through the password reset procedure, I realised I had not added the uniform CSS styling to these pages
  - Accessibility Errors - its easy to forget to add accessibility tags, alts and arias, so I went back over all the website, page by page, and added in as many accessibility features as I could find. This included alt tags to images, aria-hidden to font awesome icons, and titles to any icons that acted as buttons.
