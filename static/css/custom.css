@@ -28,8 +28,11 @@ a.nav-link {
 .navbar-toggler {
   border-color: #f0b927;
   background-color: whitesmoke;
-  background:  url(https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-01-512.png) center;
 } 
+
+.navbar-toggler-icon {
+    background:  url(https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-01-512.png) center;
+}
 
 
 .custom-toggler.navbar-toggler {
