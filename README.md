@@ -14,9 +14,12 @@ You can view the deployed website here: <a href="https://triflake-studios.heroku
 1. [Project outline](#project-outline)
 2. [UX](#ux)
 3. [Features](#features)
-4. [Technologies](#technologies_used)
+4. [Technologies](#technologies)
 5. [Building and Deployment](#building-and-deployment)
 6. [Testing](#testing) 
+7. [Future Development](#future-development)
+8. [Credits](#credits)
+19. [Acknowledgements](#Acknowledgements)
 
 
 ## Project Outline
@@ -131,8 +134,9 @@ I made small changes from the mock up when coding, as I felt some small changes 
  - Shop- and other features that have great potential, especially for the cash flow of the studio. Again, this could be developed to offer a variety of products and consultancy, especially within the developing remote working world.
 
 
+***
 
-## Technologies Used
+## Technologies
 
  - HTML - HTML5
  - CSS - CSS3
@@ -290,7 +294,7 @@ _Elements testing_
 | Systems   | iOS, Android, Linux                   |
 
 
-#### Testing 
+#### Other Tests 
 
 *Stripe*
  - A key element of this project was to create a working shopping cart. For this I used Stripe. It was installed in the build phase in Gitpod, and I did a preliminary test before adding my products, and wentt through the process of filling out the payments form, using Stripes own test credit card.
@@ -316,6 +320,8 @@ class ProductTests(TestCase):
 
 <img src="/media/products-test.jpg" title="screenshot of strip dashboard with payment" height="100">
 
+***
+
 #### Pre Deployment Snag List:
 I had  many bugs to fix during build and after deployment.
 
@@ -330,20 +336,24 @@ I had  many bugs to fix during build and after deployment.
  - I had issues with the deployment from Gitpod to Heroku and had to avail of tutor support, As I just could not see my error. I had an incorrect error in the Procfile, and this caused a migration fail, from the sqlite database to the postgres database in Heroku.
   I had also spelled DATABASES wrong in the settings.py file. Small errors, but somethimes the little ones are the hardest to see, and cause the most distress.
 
-<img src="/media/heroku-fail.jpg" title="screenshot of heroku log error" height="150"> <img src="/media/migrate-database-error.jpg" title="screenshot of console log error" height="150">
+<img src="/media/heroku-fail.jpg" title="screenshot of heroku log error" height="100"> <img src="/media/migrate-database-error.jpg" title="screenshot of console log error" height="100">
+
+***
 
 #### Post Deployment Snag List:
 
-*Major fails included*
-     - When I got my database to migrate to Heroku, the products didnt show. When I went back into sqlite, they were not their either, so I had to manually imput the products again.
-    Luckily, this being an MVP, I had only added the minimal amount of projects, so it was an easy fix.
-     - When tidying up the CSS I had deleted what I thought were unused styles, but it was the Navbar toggle Icon. I had to build a navbar toggle icon myself, in order to style it the way I wanted. 
-     (bootstrap didnt allow me to create different outline and bars). I had to rebuild this toggle icon.
-     - After deployment, I wanted to retest all the interactive elements of the site, so tested the forms and user sign up pages. I realised I hadnt applied my custom CSS styling to the password reset pages and options.
-     I felt this was important to the overall branding of TriFlake Studios.
-     - 
+*Major fails include: *
 
-*Minor bugs included:*
+- When I got my database to migrate to Heroku, the products didnt show. When I went back into sqlite, they were not their either, so I had to manually imput the products again.
+    Luckily, this being an MVP, I had only added the minimal amount of projects, so it was an easy fix.
+- When tidying up the CSS I had deleted what I thought were unused styles, but it was the Navbar toggle Icon. I had to build a navbar toggle icon myself, in order to style it the way I wanted. 
+     (bootstrap didnt allow me to create different outline and bars). I had to rebuild this toggle icon.
+- After deployment, I wanted to retest all the interactive elements of the site, so tested the forms and user sign up pages. I realised I hadnt applied my custom CSS styling to the password reset pages and options.
+     I felt this was important to the overall branding of TriFlake Studios.
+
+
+*Minor bugs include:
+*
  - Images on Shop page - these appeared smaller than I likes, I needed to resize them - fixed
  - I had not added the links to the Home Page footer social media icons - added 
  - Missing metatags in header - added
@@ -352,3 +362,39 @@ I had  many bugs to fix during build and after deployment.
  - Favicon missing - added
  - Chrome 'SameSite' cookies error - New Chrome cookie policy. 
  - Accessibility Errors - its easy to forget to add accessibility tags, alts and arias, so I went back over all the website, page by page, and added in as many accessibility features as I could find. This included alt tags to images, aria-hidden to font awesome icons, and titles to any icons that acted as buttons.
+
+***
+
+## Future Development
+This was a huge project to undertake, a full stack django ecommerce platform, and I feel I could work on it for weeks, constantly tweaking, and changing sections. However, keeping in line with the Lean UX model I wanted to follow, it satisfies my idea of an MVP for a creative design website. With expected and unexpected features. 
+
+*Existing features that need developing:*
+
+ - Desktop view. I designed the website mobile view first, and I love the feel of the home page, when you see it on mobile. However the placement of sections feels slightly off on the desktop version. I would play around with that some more.
+ - Portfolio Page: Develop a better portfolio showcase, be able to click on images to increase size and read about projects. Add logos of clients rather than text.
+ - Shop: better range of products in the shop
+ - User account: better selection of resources for the client. Is a huge area of potential for the studio, as is an unusual feature for a business of this sort.
+ - A pop up modal to encourage people to create a user account
+ - A pop up message when people have sent a message via the contact form
+ - Development of a blog to include articles, tutorials and more
+ - Instagram api with rolling images in footer, better social connection.
+
+ ***
+
+## Credits
+All text by author: Orla Breslin. All graphics and images photos copyright from TriFlake Studio. All icons copyright free from https://fontawesome.com/.
+
+***
+## Acknowledgements
+
+ 
+*Project Django Tutorials:*
+ - Code Institute, YouTube Tutorials eg Traversy Media, Academind, Corey Schafer
+*Github, Gitpod and Markup Tutorials:*
+ - Code Institute, Various via Google eg Github Help, Git SCM
+*Extras*
+ - smashtheshell on YouTube for a great little tutorial on the HTML5 download button [https://www.youtube.com/watch?v=7c4cNgD5KNA&t=314s]
+ ```
+    <a href="/media/insta-graph.jpg" download="Instagram Infograph" alt="thumbnail of Instagram Infograph"
+                                class="btn btn-default"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;download infograph </a>
+ ```
