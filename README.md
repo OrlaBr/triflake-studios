@@ -83,11 +83,18 @@ You can see the full colour scheme I had to work with here: [colour-scheme](http
 I used Google Fonts 'Noto Sans', for the main body of the text, and 'Titan One' for the h1 and h2, for impact. It mirrored the visual identity of TriFlake Studio to have large bold colourful headings.
 I then created more visual mockups using the online graphics platform 'Canva'. I developed the mobile view first, and when I was happy with that, I created the desktop version.
 
-<img src="/media/triflake-studio-designs.jpg" title="Screenshot of mobile and desktop view of website" height="500">
+<img src="/media/triflake-studio-designs.jpg" title="Screenshot of mobile and desktop view of website" height="300">
 
 
-You can see the mobile mockup here [mobile mockup link](https://github.com/OrlaBr/triflake-studios/blob/master/ux/triflakestudios-mobile-mock-up.pdf)
-You can see the desktop mockup here [desktop mockup link](https://github.com/OrlaBr/triflake-studios/blob/master/ux/triflakestudio-desktop-mock-up.pdf)
+You can see the [mobile mockup here](https://github.com/OrlaBr/triflake-studios/blob/master/ux/triflakestudios-mobile-mock-up.pdf)
+and [desktop mockup here](https://github.com/OrlaBr/triflake-studios/blob/master/ux/triflakestudio-desktop-mock-up.pdf)
+
+---
+
+ - *Surface Plane* : Using Canva as a mock up tool, I was able to create an accurate depiction of what I wanted the final website to look like, the colour schemes, placement, and fonts. I also decided to use font awesome icons, as these are now universally known. I also revised the text, to be included in the final web design. 
+I made small changes from the mock up when coding, as I felt some small changes need to be made. Changes include:
+    - Having separate about and contact pages. The navbar was getting too cluttered with all the different pages, so I decided to create a scroll down landing page that had all the basic information about the studio eg, services, about, contact. This is in keeping with my mobile first approach, and having all the relevant important information on the first scrollable page. This  also gave me more room to showcase the portfolio, shop, sign in area and shopping cart in the nav bar. 
+    - Having the footer on every page. I felt the footer on every page was too repetitive and cumbersome, and instead placed it on just the landing page, and other important pages. These are also pages that had a bulk of information on them, with a scroll element in it, so you could access important links without having to scroll back up to the navbar or go back to relevant pages.
 
 
 
