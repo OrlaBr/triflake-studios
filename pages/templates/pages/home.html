@@ -33,7 +33,7 @@
 		<div class="row text-center">
 			<div class="col-md-4">
 				<div class="circle-container">
-					<div class="circle-cover-bg" title=""></div>
+					<div class="circle-cover-bg" alt="Snapshot of a sketchpad and pencil"></div>
 				</div>
 				<h4 class="service-heading">UX & Design</h4>
 				<p class="service-text">UX research, Design Thinking, Sprint! We can help you research and understand
@@ -42,7 +42,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="circle-container">
-					<div class="circle-cover-bg2" title=""></div>
+					<div class="circle-cover-bg2" alt="Image of a street scene with connected dotted lines"></div>
 				</div>
 				<h4 class="service-heading">Graphic Design</h4>
 				<p class="service-text">We can create customized graphics, for all your print and digital media needs.
@@ -51,13 +51,13 @@
 			</div>
 			<div class="col-md-4">
 				<div class="circle-container">
-					<div class="circle-cover-bg3" title=""></div>
+					<div class="circle-cover-bg3" alt="sketch of circular modules connected"></div>
 				</div>
 				<h4 class="service-heading">Collaborate</h4>
 				<p class="service-text">We specialize in visual facilitation, using creative workshops to help develop
 					business and localized needs. From corporate identity to community projects, we'd love to talk to
-					you about
-					your needs.</p>
+					you about your needs.
+                </p>
 			</div>
 		</div>
 	</div>
@@ -78,7 +78,7 @@
 		</div>
 		<a type="submit" class="btn btn-default" href="{% url 'registration' %}">sign up now</a>
 		<div class="signupLogin">
-			<p><i class="fas fa-heart"></i> already registered?
+			<p><i class="fas fa-heart" aria-hidden="true"></i> already registered?
 				<a type="submit" href="{% url 'login' %}" class="btn btn-default loginHome">log in</a>
 			</p>
 		</div>
@@ -89,7 +89,7 @@
 <section class="d-flex clearfix" id="aboutUs">
 	<div class="container text-center">
 		<div class="row aboutusLogo">
-			<img src="/media/logo.jpg" class="img-fluid img-thumbnail text-center" alt="Responsive image">
+			<img src="/media/logo.jpg" class="img-fluid img-thumbnail text-center" alt="graphic with coloured triangles">
         </div>
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -106,7 +106,7 @@
 					identity, to published media.
 				</p>
 				<br>
-				<p>We are based in Ireland, but we <i class="fas fa-heart"></i> remote! </p>
+				<p>We are based in Ireland, but we <i class="fas fa-heart" aria-hidden="true" title="love"></i> <span class="sr-only">love</span>remote! </p>
                 <br>
                 <p>Want to chat about a project? Simply send us a message through the form below. <i class="fas fa-arrow-circle-down"></i></p>
                 <br>
@@ -122,37 +122,37 @@
 			<div class="col-lg-4 col-md-4 col-xs-2 order-lg-2">
 				<div class="text-center">
 					<img class="img-fluid" src="/media/triflake-studio.jpg" alt="logo for Triflake Studio">
-          </div>
-				</div>
-				<div class="col-lg-8 col-md-8 col-xs-10" id="contactUsSection">
-					<div class="p-5">
-						<h2 class="contactUsHeading display-5">CONTACT US</h2>
-                        <br>
-						<p class="contactUsText"> We’d love to hear from you. Whether you have a question about
+                </div>
+			</div>
+			<div class="col-lg-8 col-md-8 col-xs-10" id="contactUsSection">
+				<div class="p-5">
+					<h2 class="contactUsHeading display-5">CONTACT US</h2>
+                    <br>
+					<p class="contactUsText"> We’d love to hear from you. Whether you have a question about
 							services, design, pricing, or
 							anything else, our team is ready to answer all your questions
-						</p>
-                        <br>
-						<form class="contract-form form-content">
-							<div class="form-group">
-								<input type="text" name="firstname" id="firstname" class="form-control" placeholder="first name" required>
-                            </div>
-								<div class="form-group">
-									<input type="text" name="lastname" id="lastname" class="form-control" placeholder="last name" required>
-                            </div>
-									<div class="form-group">
-										<input type="email" name="email" id="email" class="form-control" placeholder="email address" required>
-									</div>
-										<div class="form-group">
-											<textarea rows="5" name="message" id="message" class="form-control" placeholder="write your message here..." required></textarea>
-										</div>
+					</p>
+                    <br>
+					<form class="contract-form form-content">
+						<div class="form-group">
+							<input type="text" name="firstname" id="firstname" class="form-control" placeholder="first name" required>
+                        </div>
+						<div class="form-group">
+							<input type="text" name="lastname" id="lastname" class="form-control" placeholder="last name" required>
+                        </div>
+						<div class="form-group">
+							<input type="email" name="email" id="email" class="form-control" placeholder="email address" required>
+						</div>
+						<div class="form-group">
+							<textarea rows="5" name="message" id="message" class="form-control" placeholder="write your message here..." required></textarea>
+						</div>
 										
-										<button type="submit" class="btn btn-default" id="contact-button">Send Message</button>
-						</form>
-					</div>
+						<button type="submit" class="btn btn-default" id="contact-button">Send Message</button>
+					</form>
 				</div>
 			</div>
 		</div>
+	</div>
 </section>
 
 <!-- Footer-->
@@ -161,23 +161,24 @@
 		<div class="row">
 			<!-- Footer Location-->
 			<div class="col-lg-4 mb-5 mb-lg-0">
-				<h5 class="text-uppercase mb-4">Meet Us <i class="far fa-comment-dots"></i></h5>
-				<p class="mb-0">We are based in Kerry, but we love <i class="fas fa-heart"></i> remote! We can accomodate your timeline</p>
+				<h5 class="text-uppercase mb-4">Meet Us <i class="far fa-comment-dots" aria-hidden="true"></i></h5>
+				<p class="mb-0">We are based in Kerry, but we love <i class="fas fa-heart" aria-hidden="true" title="love"></i> <span class="sr-only">love</span> remote! We can accomodate your timeline</p>
 			</div>
 			<!-- Footer Social Icons-->
 			<div class="col-lg-4 mb-5 mb-lg-0">
-				<h5 class="text-uppercase mb-4">connect  <i class="fas fa-share-alt"></i></h5>
-				<a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-facebook-f"></i></a><a
-					class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-twitter"></i></a><a
-					class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a><a
-					class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-github"></i></a>
+				<h5 class="text-uppercase mb-4">connect  <i class="fas fa-share-alt" aria-hidden="true"></i></h5>
+				<a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/TriflakeStudios/?ref=py_c" target="_blank"><i class="fab fa-facebook-f" aria-label="Got to Facebook"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/triflakestudios" target="_blank" aria-label="Got to Twitter"><i class="fab fa-fw fa-twitter" ></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/orla-breslin/" target="_blank" aria-label="Got to LinkedIn"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/triflakestudio/" target="_blank" aria-label="Got to Instagram"><i class="fab fa-fw fa-github"></i></a>
 			</div>
 			<!-- Footer About Text-->
 			<div class="col-lg-4">
-				<h5 class="text-uppercase mb-4">Want goodies?  <i class="fas fa-gift"></i></h5>
-				<p class="mb-0">Create a user account for exclusive access to resources, tutorials and more <a
-						href="{% url 'registration' %}">Sign Up</a>.</p>
-                        <br>
+				<h5 class="text-uppercase mb-4">Want goodies?  <i class="fas fa-gift" aria-hidden="true"></i></h5>
+				<p class="mb-0">Create a user account for exclusive access to resources, tutorials and more 
+                    <a href="{% url 'registration' %}">Sign Up</a>
+                </p>
+                <br>
 			</div>
 		</div>
 	</div>
