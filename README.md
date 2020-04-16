@@ -14,6 +14,9 @@ You can view the deployed website here: <a href="https://triflake-studios.heroku
 1. [Project outline](#project-outline)
 2. [UX](#ux)
 3. [Features](#features)
+4. [Technologies](#technologies_used)
+4. [Building and Deployment](#building-and-deployment)
+
 
 ## Project Outline
 The website has a dual purpose. It was created for a new local community group to use, but it also deploys all my course learning to date with the Code Institute. 
@@ -97,6 +100,7 @@ I made small changes from the mock up when coding, as I felt some small changes 
     - Having separate about and contact pages. The navbar was getting too cluttered with all the different pages, so I decided to create a scroll down landing page that had all the basic information about the studio eg, services, about, contact. This is in keeping with my mobile first approach, and having all the relevant important information on the first scrollable page. This  also gave me more room to showcase the portfolio, shop, sign in area and shopping cart in the nav bar. 
     - Having the footer on every page. I felt the footer on every page was too repetitive and cumbersome, and instead placed it on just the landing page, and other important pages. These are also pages that had a bulk of information on them, with a scroll element in it, so you could access important links without having to scroll back up to the navbar or go back to relevant pages.
 
+***
 
 ## Features
 
@@ -145,3 +149,65 @@ I made small changes from the mock up when coding, as I felt some small changes 
  - Adobe Photoshop - to edit the photographs
  - Google Fonts - stylesheet linked to use customize fonts
  - Font Awesome - stylesheet linked to use customize icons
+
+
+*** 
+
+## Building and Deployment
+
+#### Website Build
+The website was built using Gitpod, using a Django framework to build up the different sections of the website. I relied heavily on Code Institute tutorials 
+in creating the basic build, following the principles of the ecommerce and blog tutorials. One of the reasons 
+I followed the tutorials again was to make sure I understood them fully, especially in relation to using building up multiple Django apps within one project. 
+Once I had the basic functionality working, I was able to personalize it to suit my project.
+
+#### Sections Build
+My website was developed using Gitpod and hosted using Github, generated from a template created by the Code Institute, and then deployed directly from the master branch. Regular changes were made and all updates were then committed to the master branch.
+Using the django framework,  I created and developed the website in stages. Building the first app ‘ecommerce’ and then each section of the website in turn. Django has a built in database sqlite, which was used to build the website. I built the following django apps:
+ - Ecommerce - main app
+ - Static - css stylesheet and stripe javascript 
+ - Accounts - user section
+ - Products - shop section
+ - Checkout - shopping section created using stripe for payments
+ - Cart - shopping process
+ - Media - images for the website and shop
+ - Pages - static pages such as the home and portfolio pages
+ 
+ *Other install requirements:*
+ - Pillow -  a Python Imaging Library. This adds image processing capabilities to my Django project.
+ - WhiteNoise -  allows your web app to serve its own static files, making it a self-contained unit that can be deployed anywhere without relying on nginx, Amazon S3 or any other external service.
+ - Stripe -  installing stripe and adding the Stripe keys as environment variables, and updating the settings file to extract those variables into the Django project.
+
+
+Github is a great resource for deploying web applications but as it only hosts static files it cannot be used to host a dynamic application, 
+in this instance, with database functionality. It is necessary to deploy to a cloud platform that can display the project correctly. 
+In this instance I used Heroku. Once I had the basic structure of the app complete I deployed to Heroku. This way, I could make sure any changes 
+I made and viewed in Gitpod could be successfully transferred to public viewing in Heroku.
+
+
+#### Heroku
+
+Before deploying to Heroku, I add a few more steps to do. I needed to transfer all the files in my database  from django's sqlite to Heroku PostRes.
+You do this by setting the keys and values in Config Vars, in the Heroku Platform, and also your settings.py file
+
+```  
+Heroku - TrifkaleStudioAdd - Settings - Reveal Config Vars
+```
+```
+PostRes Key <add if/else statement to settings.py to use either the sqlite or the postgres database> 
+Add sqlite ‘SECRET_KEY’
+Add ‘STRIPE PUBLISHABLE' key
+Add ‘STRIPE_SECRET’ key
+
+```
+
+Its also important to do the following actions, create requirements.txt, and a Procfile
+```
+pip3 freeze --local > requirements.txt 
+echo web: python run.py > Procfile 
+```
+I also changed the deployment method settings in Heroku . I connected my account to Github, and set the deploy to automatic, so each push I make in gitpod to github would automatically push to heroku too.
+```
+Automatic deploys from  master are enabled
+```
+
