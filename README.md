@@ -15,7 +15,8 @@ You can view the deployed website here: <a href="https://triflake-studios.heroku
 2. [UX](#ux)
 3. [Features](#features)
 4. [Technologies](#technologies_used)
-4. [Building and Deployment](#building-and-deployment)
+5. [Building and Deployment](#building-and-deployment)
+6. [Testing](#testing) 
 
 
 ## Project Outline
@@ -161,6 +162,7 @@ in creating the basic build, following the principles of the ecommerce and blog 
 I followed the tutorials again was to make sure I understood them fully, especially in relation to using building up multiple Django apps within one project. 
 Once I had the basic functionality working, I was able to personalize it to suit my project.
 
+***
 #### Sections Build
 My website was developed using Gitpod and hosted using Github, generated from a template created by the Code Institute, and then deployed directly from the master branch. Regular changes were made and all updates were then committed to the master branch.
 Using the django framework,  I created and developed the website in stages. Building the first app ‘ecommerce’ and then each section of the website in turn. Django has a built in database sqlite, which was used to build the website. I built the following django apps:
@@ -184,7 +186,7 @@ in this instance, with database functionality. It is necessary to deploy to a cl
 In this instance I used Heroku. Once I had the basic structure of the app complete I deployed to Heroku. This way, I could make sure any changes 
 I made and viewed in Gitpod could be successfully transferred to public viewing in Heroku.
 
-
+***
 #### Heroku
 
 Before deploying to Heroku, I add a few more steps to do. I needed to transfer all the files in my database  from django's sqlite to Heroku PostRes.
@@ -193,6 +195,9 @@ You do this by setting the keys and values in Config Vars, in the Heroku Platfor
 ```  
 Heroku - TrifkaleStudioAdd - Settings - Reveal Config Vars
 ```
+
+Add the following:
+
 ```
 PostRes Key <add if/else statement to settings.py to use either the sqlite or the postgres database> 
 Add sqlite ‘SECRET_KEY’
@@ -210,4 +215,78 @@ I also changed the deployment method settings in Heroku . I connected my account
 ```
 Automatic deploys from  master are enabled
 ```
+***
 
+## Testing
+
+####Manual Testing
+This web application has been manually tested with different scenarios that the user may experience.
+*HomePage*
+ - Homepage - Click on the brand logo in the navigation bar. Be directed back to ‘home’ 
+ - Navigation- Click on each of the nav items in desktop and mobile view
+ - Contact Form - checked all fields for required
+ - Sign Up links - connect to register page
+ - Footer - check links work
+ ```
+ Submitted the form with an invalid email address to verify that a relevant error message appears
+ Submitted the form with all inputs valid and verify that a success message appears.
+ ```
+*Portfolio Page:*
+ - Pictures present correctly in desktop and mobile view. Links work correctly
+*Shop Page:*
+ - Products display correctly in mobile and desktop view
+ - Shopping cart works correctly - adding quantities, displays number of items in the shopping cart.
+ - Contact us link works
+ - Shopping cart - checked updating quantities, adding to cart, and filling out payment systems are working correctly.
+*Login Page:*
+ - Log in working correctly, links to forget password and join now also working
+ - Checked forgot password links
+*Sign in Page:*
+ - Created a new user account : <janedoebooks29> to check the process and access the user section as a customer: <password: JD_20!0?>
+ - Checked downloads work and contact form worked
+ - Proofreading - all text added to a Google doc for spelling and grammar check.
+ - Checking Links - tested all links including: relative, absolute, text, bookmark, e-mail, external
+ - Validating Forms
+ 
+_Dev Tools_:
+These tools were used throughout the project build.
+* Google Chrome DevTools ~ used throughout the project for testing and debugging
+* Firefox Developer Tools ~ used throughout the project for testing and debugging
+
+_Code Validation:_
+    I used a few online validators and formatters to check the code at regular intervals throughout the build.
+* <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a> 
+* <a href="https://validator.w3.org/" target="_blank">W3C CSS Validator</a> 
+* <a href="https://jshint.com/" target="_blank">JSHint</a> - Javascript validator
+* <a href="http://pep8online.com/" target="_blank">PEP8</a> - Python validator
+* <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en" target="_blank">Chrome Lens</a> - Accessibility validator
+
+_Notes_ 
+        - Warning on html pages - this is the because the validators do not recognise Flask script
+
+_Elements testing_
+
+| Feature      	| Elements                             	| Tested 	| Working 	 |
+|--------------	|--------------------------------------	|--------	|---------	 |
+| Navigation    | html links                         	| ✔      	| ✔       	|
+| Contact Forms | Fill and send                         | ✔      	| ✔       	|
+| HTML Links   	| page links                        	| ✔      	| ✔       	|
+| Database      | data presenting correctly         	| ✔      	| ✔       	|
+| PRODUCTS      | DATABASE OPERATIONS                   	                     |
+| Add  	        | ability to add products               | ✔      	| ✔       	|
+| Select        | ability to add and edit to cart       | ✔      	| ✔       	|
+| buy   	    | ability to pay for items in cart      | ✔      	| ✔       	|
+| USER  	    | AUTHENTICATION                        |        	|       	 |
+| Register  	| Create a user account                 | ✔      	| ✔       	|
+| Sign in 	    | ability to sign in user section       | ✔      	| ✔       	|
+| Password Reset| ability to reset password             | ✔      	| ✔       	|
+
+<img src="ux/app-devices.png" height="200" title="image of five-app on different devices from mobile to large desktop">
+
+| Testing   | Cross-browser/ cross-device           |
+|---------	|--------------------------------------	|
+| Browser   |Chrome, Firefox, Safari, Opera         |
+| Device    | Mobile, Tablet, Desktop               |
+| Systems   | iOS, Android, Linux                   |
+
+<img src="/media/cross-browser.jpg" title="triflake studios website on different devices" height="300">
