@@ -25,6 +25,7 @@ the Full Stack Developer Bootcamp.
 The main function of the website is to create a visible presence for TriFlake Studio, a creative design studio.
 To create the MVP I used the principles of Lean UX:
 
+<img src="/media/triflake-studio.jpg" title="trifkale studio logo" height="300">
 <img src="/media/leadnux2.jpg" title="Cycle of Lean UX" height="300">
 
  - Outcomes, assumptions, hypotheses
@@ -42,5 +43,18 @@ common features, and new features that might appeal to both their existing clien
     - Research: creative design websites vary greatly, from extremely minimalist, to overly flashy. Surprisingly the majority of sites I looked at during the research phase were not great. They were either too brash and garish, or actually neglected looking, not a good look for a design studio! Some were so minimalist, to the point of being rude (as if to say “If you haven’t heard of us, then you are a nobody”).
     - The best design option was to reflect the mood of the studio, which is bright, bubbly, modern, yet fun. Minimalist fun, with a love of triangles. So focus was on bold bubbly headings, minimal content, with triangles reflecting the logo.
     - This website would have 2 features that did not exist on most creative design websites. The first is a shop page, where you can directly book consultations. The second is a user section with exclusive access for signed up members.
+
+---
+- *Scope Plane* : Creation of a MVW, minimum viable website with mixed content that has the potential to grow.
+    - Needs: reflect the mood and work of the studio, with positive, enticing call to actions
+    - Important features:
+        - Impactful landing page that immediately reflects the modern playfulness of the studio.
+        - Contact form - easy to fill in form
+        - Portfolio and clients - visible work and client list to prove experience and competence
+        - Shop - directly bookable consultancy sessions. Unusual for a design studio, but can help them grow as a forward thinking and approachable company. This could be a potential area of growth for the studio, in proposing different types of consultancy sessions, at different prices. It may appeal to SMEs with tight budgets and limited timelines, knowing upfront and directly how much sessions will cost. This could also help with cash flow, with prepaid work sessions providing instant payment, as opposed to the normal approach of chasing cheques. 
+        - Client sign in area - again unusual for a design studio, but providing existing and potential customers with the feeling that they are getting more value for their money than just the consultancy or design work. This is another huge area of growth, not just for building potential customer base, but developing the studios reputation as resourceful, approachable, and as leaders in design innovation and trends.
+---
+- *Structure*: A minimal website, with simple content yet visually stunning. The website needed to reflect the mood and work of the studio. 
+With prominent calls to action, portfolio and shop features and sign in area. 
 
 ---
