@@ -13,6 +13,7 @@ You can view the deployed website here: <a href="https://triflake-studios.heroku
 
 1. [Project outline](#project-outline)
 2. [UX](#ux)
+3. [Features](#features)
 
 ## Project Outline
 The website has a dual purpose. It was created for a new local community group to use, but it also deploys all my course learning to date with the Code Institute. 
@@ -97,4 +98,50 @@ I made small changes from the mock up when coding, as I felt some small changes 
     - Having the footer on every page. I felt the footer on every page was too repetitive and cumbersome, and instead placed it on just the landing page, and other important pages. These are also pages that had a bulk of information on them, with a scroll element in it, so you could access important links without having to scroll back up to the navbar or go back to relevant pages.
 
 
+## Features
 
+### For Users:
+
+#### User 1: TriFlake Studio
+ - Easily contactable through online contact form
+ - Showcases work and clients in portfolio section
+ - Sell workshops through the shop page
+ - Provide extra service for signed up users
+
+#### User 2: Clients
+ - Able to view the company - about, and view portfolio
+ - Able to contact the studio easily
+ - Can create a user account 
+ - Has access to exclusive features though signed in user section
+ - Feels they can contact the studio easily through a more specific specialized contact form.
+ - User can navigate the website using the top nav bar on large screens and hamburger toggle side navbar
+ - Can purchase workshops through site with Stripe - secure payments system,
+
+---
+
+#### Breakdown of  features
+
+ - Contact Us Form- The website goal is to create a visual presence for TriFlake Studios online. Research showed that some graphic design studios placement of the contact form was like an after though. They showcased all their work first, almost like a wall for blasting design work at you, and then did a call to action. I designed this website the opposite, by putting the contact form at the front landing page, I made the website more approachable. Being based in Kerry, the likelihood is of working with smaller SMEs on regular projects, rather than big flash campaigns for big companies. Being approachable was more important.  
+ - Register and log in - getting users to sign up to the website, is a new feature not seen on many design websites. It has great potential to develop a relationship with existing and new clients. Offering freebies, resources, and a special contact form develops a more trusting and long term relationship with the customer.
+ - Shop- and other features that have great potential, especially for the cash flow of the studio. Again, this could be developed to offer a variety of products and consultancy, especially within the developing remote working world.
+
+
+
+## Technologies Used
+
+ - HTML - HTML5
+ - CSS - CSS3
+ - Bootstrap - framework
+ - Javascript - bootstrap javascript for functionality
+ - Gitpod - to write and develop the website
+ - Github - to host the project in an online repository
+ - Django - to build the python framework
+ - Heroku - to host the website
+ - Stripe -  payments technology
+
+*Other web applications used:*
+
+ - Canva - to create a detailed wireframe
+ - Adobe Photoshop - to edit the photographs
+ - Google Fonts - stylesheet linked to use customize fonts
+ - Font Awesome - stylesheet linked to use customize icons
