@@ -5,13 +5,14 @@ This website also deploys all my course learning to date with the Code Institute
 
 You can view the deployed website here: <a href="https://triflake-studios.herokuapp.com/home" target="_blank">triflakestudio.herokuapp.com</a>
 
-<img class="img-fluid" src="/media/trifkale-studio.jpg" title="trifkale studio logo" height="300">
+<img src="/media/triflake-studio.jpg" title="trifkale studio logo" height="300">
 
 ------
 
 ## Table of Contents:
 
 1. [Project outline](#project-outline)
+2. [UX](#ux)
 
 ## Project Outline
 The website has a dual purpose. It was created for a new local community group to use, but it also deploys all my course learning to date with the Code Institute. 
@@ -19,3 +20,27 @@ The elements I used in creating this website are all practical techniques I have
 the Full Stack Developer Bootcamp.
 
 ***
+## UX
+
+The main function of the website is to create a visible presence for TriFlake Studio, a creative design studio.
+To create the MVP I used the principles of Lean UX:
+
+<img src="/media/leadnux2.png" title="Cycle of Lean UX" height="300">
+
+ - Outcomes, assumptions, hypotheses
+ - Design
+ - Create MVP
+ - Research and Learning
+
+The outcome was to create an MVP website for a creative design company,  with the expected elements e.g. portfolio, contact, about pages, but with some new features. 
+With two types of users in mind, the graphic design company themselves, and their clients, I made assumptions and hypotheses about the elements that would be needed, 
+common features, and new features that might appeal to both their existing clients but also to a new customer base. 
+
+- *Strategy Plane* : Create a clean bright feel-good visually appealing website, with calls to action to engage new and existing customers.
+        - User 1: TriFlake Studio - to showcase the work of the studio and create call to actions to easily contact the studio through the website.
+        - User 2 : Clients - to view previous work of the studio and be able to contact them easily.
+        - Research: creative design websites vary greatly, from extremely minimalist, to overly flashy. Surprisingly the majority of sites I looked at during the research phase were not great. They were either too brash and garish, or actually neglected looking, not a good look for a design studio! Some were so minimalist, to the point of being rude (as if to say “If you haven’t heard of us, then you are a nobody”).
+        - The best design option was to reflect the mood of the studio, which is bright, bubbly, modern, yet fun. Minimalist fun, with a love of triangles. So focus was on bold bubbly headings, minimal content, with triangles reflecting the logo.
+        - This website would have 2 features that did not exist on most creative design websites. The first is a shop page, where you can directly book consultations. The second is a user section with exclusive access for signed up members.
+
+---
