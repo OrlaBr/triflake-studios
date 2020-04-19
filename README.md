@@ -4,6 +4,7 @@ TriFlake Studio is an MVP website for a creative design agency. The aim is to cr
 This website also deploys all my course learning to date with the Code Institute. The elements I used in creating this website are all practical techniques I have been learning, working through the modules of the Full Stack Developer Bootcamp.
 
 You can view the deployed website here: <a href="https://triflake-studios.herokuapp.com/home" target="_blank">triflakestudio.herokuapp.com</a>
+Test User account : <janedoebooks29>, <password: JD_20!0?>
 
 <img src="/media/triflake-studio.jpg" title="trifkale studio logo" height="300">
 
@@ -252,7 +253,9 @@ This web application has been manually tested with different scenarios that the 
 
  - Log in working correctly, links to forget password and join now also working
  - Checked forgot password links
+
 *Sign in Page:*
+I was able to sign into the user section as an admin, but I wanted to check if it was working as a customer:
  - Created a new user account : <janedoebooks29> to check the process and access the user section as a customer: <password: JD_20!0?>
  - Checked downloads work and contact form worked
  - Proofreading - all text added to a Google doc for spelling and grammar check.
