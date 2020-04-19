@@ -168,6 +168,9 @@ in creating the basic build, following the principles of the ecommerce and blog 
 I followed the tutorials again was to make sure I understood them fully, especially in relation to using building up multiple Django apps within one project. 
 Once I had the basic functionality working, I was able to personalize it to suit my project.
 
+*Enviromental Variables:*
+I created an env.py file in the first stages of the build, so my Django database password (secret_key) would not be pushed to Github with my commits. As the project developed, I also added Stripe keys (publishable and secret), and the PostRes database key (database) to the env file.
+
 ***
 #### Sections Build
 My website was developed using Gitpod and hosted using Github, generated from a template created by the Code Institute, and then deployed directly from the master branch. Regular changes were made and all updates were then committed to the master branch.
@@ -184,7 +187,7 @@ Using the django framework,  I created and developed the website in stages. Buil
  *Other install requirements:*
  - Pillow -  a Python Imaging Library. This adds image processing capabilities to my Django project.
  - WhiteNoise -  allows your web app to serve its own static files, making it a self-contained unit that can be deployed anywhere without relying on nginx, Amazon S3 or any other external service.
- - Stripe -  installing stripe and adding the Stripe keys as environment variables, and updating the settings file to extract those variables into the Django project.
+ - Stripe -  installing stripe  and adding the Stripe keys as environment variables, and updating the settings file to extract those variables into the Django project.
 
 *Navigation:*
  The most important new features on the website is the shop page. I wanted customers to be able to read more specifically, the ways TriFlake Studios could help them, so redirection from the log-out user section, redirects them to the shop page, rather than the home page.
@@ -202,7 +205,7 @@ Before deploying to Heroku, I add a few more steps to do. I needed to transfer a
 You do this by setting the keys and values in Config Vars, in the Heroku Platform, and also your settings.py file
 
 ```  
-Heroku - TrifkaleStudioAdd - Settings - Reveal Config Vars
+Heroku - TriflakeStudioAdd - Settings - Reveal Config Vars
 ```
 
 Add the following:
@@ -249,7 +252,7 @@ This web application has been manually tested with different scenarios that the 
  - successfully log into databse https://triflake-studios.herokuapp.com/admin/login/
  - view and edit profiles, groups, users in admin panel.
 
-<img src="/media/triflake-studio-designs.jpg" title="Screenshot of mobile and desktop view of website" height="300">
+<img src="/media/admin-panel.jpg" title="Screenshot of products  in database admin panel" height="300">
 
 *Admin Shop Page:*
 
@@ -258,7 +261,7 @@ This web application has been manually tested with different scenarios that the 
  - edit products - edit images, edit existing description, edit existing prices
  - delete existing products
 
- <img src="/media/admin-panel.jpg" title="Screenshot of products  in database admin panel" height="300">
+<img src="/media/products-screenshot.jpg" title="Screenshot of products  in database admin panel" height="300">
 
 *User Shop Page:*
 
@@ -267,7 +270,6 @@ This web application has been manually tested with different scenarios that the 
  - Contact us link works
  - Shopping cart - checked updating quantities, adding to cart, and filling out payment systems are working correctly.
 
-  <img src="/media/products-screenshot.jpg" title="Screenshot of products  in database admin panel" height="300">
 
 *Login Page:*
 
@@ -410,7 +412,7 @@ This was a huge project to undertake, a full stack django ecommerce platform, an
  - Development of a blog to include articles, tutorials and more
  - Instagram application with rolling images in footer, better social connection.
 
- In a real world situation, I would begin the Testing Phase: contact potential users who have been identifyied as my 'user persona', or use online platforms such as www.usertesting.com". The 2 areas I am interested in developing are the shop and user sections. With some time, it would be possible to see which features is the most used, and has the potential for the most development and growth.
+ In a real world situation, I would begin the Testing Phase: contact potential users who have been identifyied as my 'user persona', or use online platforms such as www.usertesting.com. The two features I am interested in developing are the shop and user sections. With some time, it would be possible to see which features is the most used, and has the potential for the most development and growth.
 
  ***
 
