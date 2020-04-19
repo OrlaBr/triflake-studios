@@ -23,9 +23,8 @@ You can view the deployed website here: <a href="https://triflake-studios.heroku
 
 
 ## Project Outline
-The website has a dual purpose. It was created for a new local community group to use, but it also deploys all my course learning to date with the Code Institute. 
-The elements I used in creating this website are all practical techniques I have been learning, working through the User Centric Front End Development modules of 
-the Full Stack Developer Bootcamp.
+The website has  a duel purpose. It was created for me to showcase my work as a web developer. The elements I used in creating this website are all practical coding techniques I have been learning, working through the Full Stack with Django modules of 
+the Code Institute Bootcamp, with Kerry College in the winter of 2019/2020. The second purpose, is to showcase my graphic design skills, as all the graphic elements in the website have been designed by over the past few years, they are all actual projects and clients I have worked for.
 
 ***
 ## UX
@@ -323,11 +322,11 @@ class ProductTests(TestCase):
 ***
 
 #### Pre Deployment Snag List:
-I had  many bugs to fix during build and after deployment.
+I had  many bugs to fix during build and pre deployment.
 
 *Major fails included*
 
- - Building the Accounts Folder: I imported the accounts app from a previous project, and doulbechecking all the settings and url code was correect, I could not get the app to work. It turns out I had put the backends.py file into the wrong folder. 
+ - Building the Accounts Folder: I imported the accounts app from a previous project, and double checking all the settings and url code was correect, I could not get the app to work. It turns out I had put the backends.py file into the wrong folder. 
  - After building the main apps for the project, the accounts, the products, cart sections, 
     I wanted to create the home page and and work on the navbar, so I could get working links, 
     and easily move to one page or another before working properly on the styling and customized css. REading through different documentation online in django, and Stackoverflow, 
