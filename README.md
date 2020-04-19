@@ -24,7 +24,9 @@ You can view the deployed website here: <a href="https://triflake-studios.heroku
 
 ## Project Outline
 The website has  a duel purpose. It was created for me to showcase my work as a web developer. The elements I used in creating this website are all practical coding techniques I have been learning, working through the Full Stack with Django modules of 
-the Code Institute Bootcamp, with Kerry College in the winter of 2019/2020. The second purpose, is to showcase my graphic design skills, as all the graphic elements in the website have been designed by over the past few years, they are all actual projects and clients I have worked for.
+the Code Institute Bootcamp, with Kerry College in the winter of 2019/2020. 
+
+The second purpose, is to showcase my graphic design work, as all the graphic elements in the website have been designed by over the past few years, they are all actual projects and clients I have worked for.
 
 ***
 ## UX
@@ -47,7 +49,7 @@ common features, and new features that might appeal to both their existing clien
     - User 1: TriFlake Studio - to showcase the work of the studio and create call to actions to easily contact the studio through the website.
     - User 2 : Clients - to view previous work of the studio and be able to contact them easily.
     - Research: creative design websites vary greatly, from extremely minimalist, to overly flashy. Surprisingly the majority of sites I looked at during the research phase were not great. They were either too brash and garish, or actually neglected looking, not a good look for a design studio! Some were so minimalist, to the point of being rude (as if to say “If you haven’t heard of us, then you are a nobody”).
-    - The best design option was to reflect the mood of the studio, which is bright, bubbly, modern, yet fun. Minimalist fun, with a love of triangles. So focus was on bold bubbly headings, minimal content, with triangles reflecting the logo.
+    - The best design option was to reflect the mood of the studio, which is bright, bubbly, modern, yet fun. Minimalist fun, with a love of triangles. So focus was on bold bubbly headings, minimal content, with triangles throughout the site reflecting the logo.
     - This website would have 2 features that did not exist on most creative design websites. The first is a shop page, where you can directly book consultations. The second is a user section with exclusive access for signed up members.
 
 ---
@@ -88,7 +90,7 @@ You can see the full colour scheme I had to work with here: [colour-scheme](http
 <img src="/media/colours.jpg" title="Colour scheme for TriFlake Studios" height="100">
 
 I used Google Fonts 'Noto Sans', for the main body of the text, and 'Titan One' for the h1 and h2, for impact. It mirrored the visual identity of TriFlake Studio to have large bold colourful headings.
-I then created more visual mockups using the online graphics platform 'Canva'. I developed the mobile view first, and when I was happy with that, I created the desktop version.
+I then created more visual, high fidelity mockups using the online graphics platform 'Canva'. I developed the mobile view first, and when I was happy with that, I created the desktop version.
 
 <img src="/media/triflake-studio-designs.jpg" title="Screenshot of mobile and desktop view of website" height="300">
 
@@ -98,9 +100,9 @@ and [desktop mockup here](https://github.com/OrlaBr/triflake-studios/blob/master
 
 ---
 
- - *Surface Plane* : Using Canva as a mock up tool, I was able to create an accurate depiction of what I wanted the final website to look like, the colour schemes, placement, and fonts. I also decided to use font awesome icons, as these are now universally known. I also revised the text, to be included in the final web design. 
-I made small changes from the mock up when coding, as I felt some small changes need to be made. Changes include:
-    - Having separate about and contact pages. The navbar was getting too cluttered with all the different pages, so I decided to create a scroll down landing page that had all the basic information about the studio eg, services, about, contact. This is in keeping with my mobile first approach, and having all the relevant important information on the first scrollable page. This  also gave me more room to showcase the portfolio, shop, sign in area and shopping cart in the nav bar. 
+ - *Surface Plane* : Using Canva as a mock up tool, I was able to create an accurate depiction of what I wanted the final website to look like, the colour schemes, placement, and fonts. I also decided to use font awesome icons. Icons have become an expected visual language in website, helping the user to quickly see relevant titles and buttons. I also revised the content copy. 
+Changes include:
+    - Having separate 'about' and 'contact' pages. The navbar was getting too cluttered with all the different pages, so I decided to create a scroll down landing page that had all the basic information about the studio eg, services, about, contact. This is in keeping with my mobile first approach, and having all the relevant important information on the first scrollable page. This  also gave me more room to showcase the portfolio, shop, sign in area and shopping cart in the nav bar. 
     - Having the footer on every page. I felt the footer on every page was too repetitive and cumbersome, and instead placed it on just the landing page, and other important pages. These are also pages that had a bulk of information on them, with a scroll element in it, so you could access important links without having to scroll back up to the navbar or go back to relevant pages.
 
 ***
@@ -168,7 +170,7 @@ Once I had the basic functionality working, I was able to personalize it to suit
 ***
 #### Sections Build
 My website was developed using Gitpod and hosted using Github, generated from a template created by the Code Institute, and then deployed directly from the master branch. Regular changes were made and all updates were then committed to the master branch.
-Using the django framework,  I created and developed the website in stages. Building the first app ‘ecommerce’ and then each section of the website in turn. Django has a built in database sqlite, which was used to build the website. I built the following django apps:
+Using the django framework,  I created and developed the website in stages. Building the first app ‘ecommerce’ and then each section of the website in turn. U used the Django built in database sqlite. I then built the following django apps:
  - Ecommerce - main app
  - Static - css stylesheet and stripe javascript 
  - Accounts - user section
@@ -224,6 +226,7 @@ Automatic deploys from  master are enabled
 
 #### Manual Testing
 This web application has been manually tested with different scenarios that the user may experience.
+
 *HomePage*
  - Homepage - Click on the brand logo in the navigation bar. Be directed back to ‘home’ 
  - Navigation- Click on each of the nav items in desktop and mobile view
@@ -234,14 +237,19 @@ This web application has been manually tested with different scenarios that the 
  Submitted the form with an invalid email address to verify that a relevant error message appears
  Submitted the form with all inputs valid and verify that a success message appears.
  ```
+
 *Portfolio Page:*
  - Pictures present correctly in desktop and mobile view. Links work correctly
+
 *Shop Page:*
+
  - Products display correctly in mobile and desktop view
  - Shopping cart works correctly - adding quantities, displays number of items in the shopping cart.
  - Contact us link works
  - Shopping cart - checked updating quantities, adding to cart, and filling out payment systems are working correctly.
+
 *Login Page:*
+
  - Log in working correctly, links to forget password and join now also working
  - Checked forgot password links
 *Sign in Page:*
@@ -276,7 +284,7 @@ _Elements testing_
 | PRODUCTS      | DATABASE OPERATIONS                   	                     |
 | Add  	        | ability to add products               | ✔      	| ✔       	|
 | Select        | ability to add and edit to cart       | ✔      	| ✔       	|
-| buy   	    | ability to pay for items in cart      | ✔      	| ✔       	|
+| Buy   	    | ability to pay for items in cart      | ✔      	| ✔       	|
 | USER  	    | AUTHENTICATION                        |        	|       	 |
 | Register  	| Create a user account                 | ✔      	| ✔       	|
 | Sign in 	    | ability to sign in user section       | ✔      	| ✔       	|
@@ -322,17 +330,17 @@ class ProductTests(TestCase):
 ***
 
 #### Pre Deployment Snag List:
-I had  many bugs to fix during build and pre deployment.
+I had many bugs to fix during build and pre deployment.
 
 *Major fails included*
 
- - Building the Accounts Folder: I imported the accounts app from a previous project, and double checking all the settings and url code was correect, I could not get the app to work. It turns out I had put the backends.py file into the wrong folder. 
+ - Building the Accounts Folder: I imported the accounts app from a previous project, and double checking all the settings and url code was correct, I could not get the app to work. It turns out I had put the backends.py file into the wrong folder. 
  - After building the main apps for the project, the accounts, the products, cart sections, 
     I wanted to create the home page and and work on the navbar, so I could get working links, 
-    and easily move to one page or another before working properly on the styling and customized css. REading through different documentation online in django, and Stackoverflow, 
-    I created what I thought was the correct path to building the home 'pages' app. but after much frazzled thingking, I went back over the Stack Overflow questions/answer I had followed, and realised it was an old post,
-    using older version of django, and I had to take several steps back in my commit history, to fix the error. Learning the benefits of a cgood commit history with meaningful commit messages!
- - I had issues with the deployment from Gitpod to Heroku and had to avail of tutor support, As I just could not see my error. I had an incorrect error in the Procfile, and this caused a migration fail, from the sqlite database to the postgres database in Heroku.
+    and easily move to one page or another before working properly on the styling and customized css. Reading through different documentation online in Django documentation, and Stackoverflow, 
+    I created what I thought was the correct path to building the home 'pages' app. but after much frazzled adding and editing, I went back over the Stack Overflow questions/answer I had followed, and realised it was an old post,
+    using older version of Django and different installs, and I had to take several steps back in my commit history, to fix the error, and start again. Learning the benefits of a good commit history with meaningful commit messages along the way!
+ - I had issues with the deployment from Gitpod to Heroku and had to avail of tutor support, As I just could not see my error. I had an incorrect word in the Procfile, and this caused a migration fail, from the sqlite database to the postgres database in Heroku.
   I had also spelled DATABASES wrong in the settings.py file. Small errors, but somethimes the little ones are the hardest to see, and cause the most distress.
 
 <img src="/media/heroku-fail.jpg" title="screenshot of heroku log error" height="100"> <img src="/media/migrate-database-error.jpg" title="screenshot of console log error" height="100">
@@ -345,7 +353,7 @@ I had  many bugs to fix during build and pre deployment.
 
 - When I got my database to migrate to Heroku, the products didnt show. When I went back into sqlite, they were not their either, so I had to manually imput the products again.
     Luckily, this being an MVP, I had only added the minimal amount of projects, so it was an easy fix.
-- When tidying up the CSS I had deleted what I thought were unused styles, but it was the Navbar toggle Icon. I had to build a navbar toggle icon myself, in order to style it the way I wanted. 
+- When tidying up the CSS I had deleted what I thought were unused styles, but it was the Navbar toggle Icon. I had to build a navbar toggle icon myself, in order to style it the way I wanted, 
      (bootstrap didnt allow me to create different outline and bars). I had to rebuild this toggle icon.
 - After deployment, I wanted to retest all the interactive elements of the site, so tested the forms and user sign up pages. I realised I hadnt applied my custom CSS styling to the password reset pages and options.
      I felt this was important to the overall branding of TriFlake Studios.
@@ -367,6 +375,7 @@ I had  many bugs to fix during build and pre deployment.
 ## Future Development
 This was a huge project to undertake, a full stack django ecommerce platform, and I feel I could work on it for weeks, constantly tweaking, and changing sections. However, keeping in line with the Lean UX model I wanted to follow, it satisfies my idea of an MVP for a creative design website. With expected and unexpected features. 
 
+
 *Existing features that need developing:*
 
  - Desktop view. I designed the website mobile view first, and I love the feel of the home page, when you see it on mobile. However the placement of sections feels slightly off on the desktop version. I would play around with that some more.
@@ -377,6 +386,8 @@ This was a huge project to undertake, a full stack django ecommerce platform, an
  - A pop up message when people have sent a message via the contact form
  - Development of a blog to include articles, tutorials and more
  - Instagram application with rolling images in footer, better social connection.
+
+ In a real world situation, I would begin the Testing Phase: contact potential users who have been identifyied as my 'user persona', or use online platforms such as www.usertesting.com". The 2 areas I am interested in developing are the shop and user sections. With some time, it would be possible to see which features is the most used, and has the potential for the most development and growth.
 
  ***
 
