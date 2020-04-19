@@ -245,12 +245,29 @@ This web application has been manually tested with different scenarios that the 
 *Portfolio Page:*
  - Pictures present correctly in desktop and mobile view. Links work correctly
 
-*Shop Page:*
+*Admin Databse:*
+ - successfully log into databse https://triflake-studios.herokuapp.com/admin/login/
+ - view and edit profiles, groups, users in admin panel.
+
+<img src="/media/triflake-studio-designs.jpg" title="Screenshot of mobile and desktop view of website" height="300">
+
+*Admin Shop Page:*
+
+ - sign into database
+ - add new products - upload images, add new description, add new prices
+ - edit products - edit images, edit existing description, edit existing prices
+ - delete existing products
+
+ <img src="/media/admin-panel.jpg" title="Screenshot of products  in database admin panel" height="300">
+
+*User Shop Page:*
 
  - Products display correctly in mobile and desktop view
  - Shopping cart works correctly - adding quantities, displays number of items in the shopping cart.
  - Contact us link works
  - Shopping cart - checked updating quantities, adding to cart, and filling out payment systems are working correctly.
+
+  <img src="/media/products-screenshot.jpg" title="Screenshot of products  in database admin panel" height="300">
 
 *Login Page:*
 
