@@ -186,6 +186,9 @@ Using the django framework,  I created and developed the website in stages. Buil
  - WhiteNoise -  allows your web app to serve its own static files, making it a self-contained unit that can be deployed anywhere without relying on nginx, Amazon S3 or any other external service.
  - Stripe -  installing stripe and adding the Stripe keys as environment variables, and updating the settings file to extract those variables into the Django project.
 
+*Navigation:*
+ The most important new features on the website is the shop page. I wanted customers to be able to read more specifically, the ways TriFlake Studios could help them, so redirection from the log-out user section, redirects them to the shop page, rather than the home page.
+
 
 Github is a great resource for deploying web applications but as it only hosts static files it cannot be used to host a dynamic application, 
 in this instance, with database functionality. It is necessary to deploy to a cloud platform that can display the project correctly. 
