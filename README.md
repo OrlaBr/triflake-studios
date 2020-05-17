@@ -4,7 +4,7 @@ TriFlake Studio is an MVP website for a creative design agency. The aim is to cr
 This website also deploys all my course learning to date with the Code Institute. The elements I used in creating this website are all practical techniques I have been learning, working through the modules of the Full Stack Developer Bootcamp.
 
 You can view the deployed website here: <a href="https://triflake-studios.herokuapp.com/home" target="_blank">triflakestudio.herokuapp.com</a>
- - Test User account : janedoebooks29, password: JD_20!0?
+
 
 <img src="/media/triflake-studio.jpg" title="trifkale studio logo" height="300">
 
